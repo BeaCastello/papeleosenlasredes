@@ -1,70 +1,53 @@
-const navbar = document.getElementById("navbar");
-const hamburger = document.getElementById("hamburger");
-const navLinks = document.querySelector(".nav-links");
+function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('show');
+}
 
-// Cambio la transparencia del menú al hacer scroll
-window.addEventListener("scroll", function() {
-    if (window.scrollY > 50) {
-        navbar.classList.add("transparent");
-    } else {
-        navbar.classList.remove("transparent");
+// Añadir un listener para cerrar el menú al hacer clic fuera de él (opcional)
+document.addEventListener('click', (e) => {
+    const menuHamburguesa = document.getElementById('menu-hamburguesa');
+    const navLinks = document.getElementById('nav-links');
+    
+    if (!menuHamburguesa.contains(e.target) && !navLinks.contains(e.target)) {
+        navLinks.classList.remove('show');
     }
 });
 
+//Botón leer más para la sección:¿Qué es un inmigrante?
 
-hamburger.addEventListener("click", function() {
-    navLinks.classList.toggle("active");
-});
+function toggleContent() {
+    const contentContainer = document.getElementById('content-container');
+    const button = document.querySelector('.toggle-btn');
 
-  (function() {
-    emailjs.init("CPlHCPmFSQXzJ332c"); 
-})();
-
-
-// Carrusel services
-
-function showSlide(index) {
-    const slides = document.querySelectorAll(".slide");
-    const pages = document.querySelectorAll(".page");
-
-    slides.forEach((slide, i) => {
-        slide.style.transform = `translateX(${-(index * 100)}%)`;
-        pages[i].classList.remove("active");
-    });
-    pages[index].classList.add("active");
+    if (contentContainer.style.display === 'flex') {
+        contentContainer.style.display = 'none';
+        button.textContent = 'Mostrar más';
+    } else {
+        contentContainer.style.display = 'flex';
+        button.textContent = 'Mostrar menos';
+    }
 }
 
 
-// EmailJS
-const contactButton = document.getElementById("contactButton");
-const contactAlert = document.getElementById("contactAlert");
-const closeButton = document.querySelector(".close-button");
+//¿Qué es un arraigo?
 
-contactButton.onclick = function() {
-    contactAlert.style.display = "flex";
-};
+function changeContent(newTitle, newText) {
+    document.getElementById('title').innerHTML = newTitle;
+    document.getElementById('description').innerHTML = newText;
+  }
 
-closeButton.onclick = function() {
-    contactAlert.style.display = "none";
-};
 
-window.onclick = function(event) {
-    if (event.target == contactAlert) {
-        contactAlert.style.display = "none";
-    }
-};
 
-// Enviar el formulario al correo
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-    e.preventDefault();
-    
-    
-    emailjs.sendForm('service_e4rgq0q', 'template_bjg3pgj', this)
-        .then(() => {
-            alert('Mensaje enviado exitosamente');
-            contactAlert.style.display = "none";
-        }, (error) => {
-            alert('Error al enviar el mensaje: ' + JSON.stringify(error));
-        }); 
-});
+  
+
+
+
+
+
+
+
+
+
+
+
 

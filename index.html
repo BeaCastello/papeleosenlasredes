@@ -2,206 +2,220 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Papeleos en las redes</title>
+    <link rel="icon" href="imagenes/Logo6.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    
 
 </head>
 
 <body>
-    <header id="navbar">
-        <img src="imagenes/nameLogo1.png" class="logo"></div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#about-us">Sobre nosotros</a></li>
-                <li class="dropdown">
-                    <a href="#services">Servicios</a>
-                    <ul class="submenu">
-                        <li><a href="#">Gestoría</a></li>
-                        <li><a href="#">Apoyo a la comundad extranjera</a></li>
-                        <li><a href="#">Formación de expediente</a></li>
-                        <li><a href="#">Teleayuda</a></li>
-                        <li><a href="#">Seguros médicos</a></li>
-                        <li><a href="#">Legalización de documentos</a></li>
-                    </ul>
-                </li>
 
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
+    <header class="navbar">
+        <img class="Logo" src="imagenes/nameLogo1.png" alt="Logo"></img>
+        <span class="hamburguesa" id="menu-hamburguesa" onclick="toggleMenu()">&#9776;</span>
+        <ul class="navlinks" id="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#quienes-somos">Quienes somos</a></li>
+            <li class="services"><a href="#services" id="services-Link">Servicios</a>
+                <ul class="submenu" id="submenu">
+                    <li class="lista"><a href="#">Gestoría</a></li>
+                    <li class="lista"><a href="#">Apoyo a la comundad extranjera</a></li>
+                    <li class="lista"><a href="#">Formación de expediente</a></li>
+                    <li class="lista"><a href="#">Teleayuda</a></li>
+                    <li class="lista"><a href="#">Seguros médicos</a></li>
+                    <li class="lista"><a href="#">Legalización de documentos</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#blog">Blog</a></li>
+        </ul>
     </header>
 
-    <!-- Banner -->
-    <section class="banner" id="home">
-        <div class="banner-content">
+    <section class="banner" id="inicio">
+        <div>
             <h1>Optimizando la vida</h1>
-            <p>Información de productos y servicios</p>
-            <a href="#contact" class="btn">Contáctame</a>
+            <p class="inf">Información de productos y servicios</p>
+            <a href="#contact" class="btn">Llama sin compromiso </a>
         </div>
     </section>
-    </header>
 
-    <!-- About us -->
-    <div class="container" id="about-us">
-        <div class="content-about-us">
-            <img class="imagen-Laura" src="imagenes/Photo_Laura10.png" alt="Foto de Laura"></img>
+    <!-- Texto animado -->
+
+    <div class="animation" id="quienes-somos">
+        <p class="animated-text">Confíe en nuestro equipo de especialistas con amplia experiencia en asesoría legal.
+            Ofrecemos un servicio profesional y personalizado, adaptado a sus necesidades.</p>
+    </div>
+
+    <!-- Quienes somos -->
+    <div class="quienes-somos">
+        <div class="photo-personal">
+            <img class="photo-Laura" src="imagenes/Photo_Laura12.png" alt="Imagen de Laura">
         </div>
-
-        <div class="info">
-            <hr> </hr>
-            <img class="img-logo" src="imagenes/nameLogo.png" alt="logo"></img>
-            <p class="text-sobrenosotros">
-                Nuestro objetivo se basa en facilitar el proceso administrativo a personas
-                extranjeras que residen o planean establecerse en otro país. Nos especializamos
-                en brindar asistencia integral en trámites esenciales, como permisos de residencia, renovaciones de
-                visados, autorizaciones de trabajo, reagrupación familiar y obtención de ciudadanía, entre otros.
-                Ofrecemos una asesoría profesional enfocada en agilizar los procesos, evitar errores comunes y
-                reducir tiempos de espera.</p>
-            <p class="text-sobrenosotros">
-                Nuestros usuarios recibirán una orientación personalizada y apoyo en cada paso del
-                proceso, garantizando una experiencia fluida y sin complicaciones para la comodidad, seguridad y
-                rapidez en el servicio, respaldados por un especialista en procedimientos legales y documentales.
-                De este modo, ayudamos a nuestros clientes a ahorrar
-                tiempo y a enfrentar los trámites burocráticos con mayor tranquilidad y confianza.
+        <div class="contenido-derecho">
+            <hr>
+            <img src="imagenes/nameLogo.png" alt="Logo" class="logo-img">
+            <p class="text-quienes-somos">
+                Nuestro objetivo se basa en facilitar el proceso administrativo a personas extranjeras que residen o
+                planean
+                establecerse en otro país. Nos especializamos en brindar asistencia integral en trámites esenciales,
+                como
+                permisos de residencia, renovaciones de visados, autorizaciones de trabajo, reagrupación familiar y
+                obtención de ciudadanía, entre otros. Ofrecemos una asesoría profesional enfocada en agilizar los
+                procesos,
+                evitar errores comunes y reducir tiempos de espera.
+            </p>
+            <p class="text-quienes-somos">
+                Nuestros usuarios recibirán una orientación personalizada y apoyo en cada paso del proceso, garantizando
+                una experiencia fluida y sin complicaciones para la comodidad, seguridad y rapidez en el servicio,
+                respaldados por un especialista en procedimientos legales y documentales. De este modo, ayudamos a
+                nuestros
+                clientes a ahorrar tiempo y a enfrentar los trámites burocráticos con mayor tranquilidad y confianza.
             </p>
             <div class="contacto">
-                <a href="mailto:admin@papeleosenlasredes.com" class="boton-email"><i class="fa-solid fa-envelope "></i>
-                    admin@papeleosenlasredes.com</a>
-                <a href="tel:+34642643599" class="boton-tel"><i class="fa-solid fa-phone"></i> +34 642 64 35 99</a>
-            </div>
-        </div>
-
-    </div>
-
-
-    <!-- Services -->
-    <div class="content-services" id="services">
-        <div class="advertisement">
-            <div class="service-advertisement">Tu tranquilidad es nuestro compromiso. ¡Contáctanos ahora para más
-                detalles!</div>
-        </div>
-        <div class="carousel">
-            <div class="slide active">
-                <div class="card">
-                    <img src="imagenes/servicios.png" alt="Service 1">
-                    <h3>Gestoría</h3>
-                    <a href="#">LEER MÁS »</a>
-                </div>
-                <div class="card">
-                    <img src="imagenes/servicios.png" alt="Service 2">
-                    <h3>Apoyo a la comundad extranjera</h3>
-                    <a href="#">LEER MÁS »</a>
-                </div>
-                <div class="card">
-                    <img src="imagenes/servicios.png" alt="Service 3" alt="Service 3">
-                    <h3>Formación de expediente</h3>
-                    <a href="#">LEER MÁS »</a>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="card">
-                    <img src="imagenes/servicios.png" alt="Service 4">
-                    <h3>Teleayuda</h3>
-                    <a href="#">LEER MÁS »</a>
-                </div>
-                <div class="card">
-                    <img src="imagenes/servicios.png" alt="Service 5">
-                    <h3>Seguros médicos</h3>
-                    <a href="#">LEER MÁS »</a>
-                </div>
-                <div class="card">
-                    <img src="imagenes/servicios.png" alt="Service 6">
-                    <h3>Legalización de documentos</h3>
-                    <a href="#">LEER MÁS »</a>
-                </div>
-            </div>
-        </div>
-        <div class="pagination">
-            <span class="page active" onclick="showSlide(0)">1</span>
-            <span class="page" onclick="showSlide(1)">2</span>
-
-        </div>
-    </div>
-    <!-- Contact -->
-    <div class="content-contact" id="contact">
-        <div class="overlay-black">
-            <h1>CONTÁCTANOS</h1><br></br>
-            <p>Estamos aquí para ayudarte, contáctanos hoy</p><br></br>
-            <button id="contactButton">Contáctame</button>
-
-            <div id="contactAlert" class="alert">
-                <div class="content-alert">
-                    <span class="close-button">&times;</span>
-                    <h2 class="form-text">CONECTA CON NOSOTROS</h2>
-
-                    <form id="contactForm">
-                        <label for="name"><b>Nombre:</b></label>
-                        <input class="input-contactForm" type="text" id="name" name="name" required>
-
-                        <label class="email" for="email"><b>E-mail:</b></label>
-                        <input class="input-contactForm" type="email" id="email" name="email" required>
-
-                        <label class="phone" for="phone"><b>Teléfono:</b></label>
-                        <input class="input-contactForm" type="tel" id="phone" name="phone" required>
-
-                        <label class="consulta" for="consulta"><b>Mensaje:</b></label>
-                        <textarea id="consulta" name="consulta" required></textarea>
-
-                        <label for="terms">
-                            <input type="checkbox" id="terms" name="terms" required>
-                            Acepto el <a href="#">aviso legal/política de privacidad</a>.
-                        </label>
-
-                        <button class="sendButton" type="submit" id="sendButton">Enviar</button>
-                    </form>
-
-
-                </div>
+                <a href="mailto:admin@papeleosenlasredes.com" class="contact-link">
+                    <i class="fas fa-envelope"></i> admin@papeleosenlasredes.com
+                </a>
+                <a href="tel:+34642643599" class="contact-link1">
+                    <i class="fas fa-phone"></i> +34 642 64 35 99
+                </a>
             </div>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <!-- ¿Qué es un inmigrante? -->
 
-    <footer class="footer">
-        <div class="footer-container">
-            <div>
-                <button class="btnarrow">Siguenos <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-            <div class="footer-redes">
-                <p> admin@papeleosenlasredes.com </p>
-                <p>+34 642 64 35 99 </p>
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" id="redes-sociales"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter" id="redes-sociales"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram" id="redes-sociales"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" id="redes-sociales"></i></a>
-            </div>
+    <section class="immigration-container" id="inmigracion">
+        <h2> ¿Qué es un inmigrante? </h2>
+        <p class="intro-text">
+            Un inmigrante es una persona que sale de su país de origen a otro país para vivir allí, ya sea por motivos
+            de trabajo, estudios, seguridad, o para tener una mejor calidad de vida. La inmigración puede ser temporal o
+            permanente,
+            dependiendo de las leyes del país de destino y de las circunstancias personales del inmigrante.
+        </p>
+        <button class="toggle-btn" onclick="toggleContent()">Mostrar más</button>
+        <div class="content-container" id="content-container">
+            <div class="text-content">
+                <h3 class="additional-title">Impacto y Desafíos de la Inmigración</h3>
+                <p class="additional-text">
+                    <b>1. Barreras de idioma: </b> Si el inmigrante no habla el idioma local, esto puede dificultar la
+                    comunicación, el acceso a servicios y la integración social.<br></br>
+                    <b>2. Dificultades para encontrar trabajo: </b> En muchos casos, las personas enfrentan problemas
+                    para
+                    conseguir empleo, por no tener la experiencia laboral reconocida en el nuevo país, o debido a trabas
+                    legales o sociales.<br></br>
+                    <b>3. Adaptación cultural: </b> Las costumbres, valores y tradiciones del nuevo país pueden ser
+                    diferentes.
+                    Esto puede llevar a una sensación de desconexión o "choque cultural", lo cual puede afectar su
+                    bienestar emocional.<br></br>
+                    <b>4. Discriminación y xenofobia: </b> Los inmigrantes pueden enfrentar prejuicios y discriminación
+                    por ser
+                    extranjeros. Esto puede ir desde trato injusto, hasta incidentes de rechazo o exclusión en la
+                    sociedad.<br></br>
+                    <b>5. Dificultad para acceder a servicios básicos: </b> A veces, los inmigrantes tienen problemas
+                    para
+                    acceder a servicios de salud, educación o asistencia social, ya sea por barreras burocráticas, o
+                    porque no tienen el estatus migratorio adecuado.<br></br>
+                    <b></b>6. Nostalgia o soledad: </b> Estar lejos de su familia y amigos, además de no tener una red
+                    de apoyo,
+                    puede causar tristeza, soledad, e incluso afectar la salud mental.<br></br>
+                <p class="resume-text">
+                    En general, la experiencia de los inmigrantes puede ser desafiante, pero también es una oportunidad
+                    de crecimiento personal y profesional. Con el apoyo adecuado, muchos inmigrantes logran integrarse
+                    exitosamente y contribuir de manera valiosa a sus nuevas comunidades.</p>
 
-            <div class="footer-menu">
-                <ul class="listado">
-                    <li><a href="#">Inicio</a> | <a href="#">Servicios</a> | <a href="#">Sobre Nosotros | <a
-                                href="#">Contacto</a> | <a href="#">Blog</a></a></li>
-                </ul>
+                </p>
             </div>
-
-            <div class="footer-copyright">
-                <p class="text-copyright">&copy; 2024 Papeleos en las redes. Todos los derechos reservados.</p>
+            <div class="image-content">
+                <img src="imagenes/inmigración.png" alt="Imagen representativa de la inmigración"
+                    class="immigration-photo">
             </div>
         </div>
-    </footer>
+    </section>
 
-    <a href="https://api.whatsapp.com/send?phone=34642643599" class="whatsapp-button" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-    </a>
+    <!-- ¿Qué es un arraigo?-->
+     <div>
+        <h2 class="title1"> ¿Qué es el arraigo </h2>
+     </div>
+    <div class="container">        
+        <div class="left-section" id="textContainer">
+            <h2 id="title" class="roots-title">¿Qué es el arraigo?</h2>
+            <p id="description" class="roots-description">El arraigo es un procedimiento establecido en la normativa de
+                extranjería en España, que permite a los ciudadanos no pertenecientes a la Unión Europea y que han
+                residido en el país en situación irregular durante un periodo determinado, obtener la residencia legal y
+                regularizar su situación.
+                Este tipo de autorización de residencia, otorgada por circunstancias excepcionales, permite al
+                beneficiario residir legalmente en España durante un año, con la posibilidad de renovación para obtener
+                un permiso de residencia a largo plazo.
+                El procedimiento de arraigo, regulado por la Ley Orgánica 4/2000 y el Real Decreto 557/2011 sobre
+                extranjería, permite a cualquier ciudadano extracomunitario vivir y trabajar en España de manera legal.
+                Los beneficiarios pueden desempeñarse como trabajadores autónomos, o como trabajadores por cuenta ajena
+                en todo el Territorio Nacional.
+                El arraigo es una vía accesible para aquellos que ingresan al país como turistas y buscan regularizar su
+                situación. Una de las principales ventajas de este procedimiento es que puede iniciarse desde España y,
+                en comparación con otros permisos de residencia, implica trámites considerablemente menos complejos que
+                los que se suelen exigir desde el país de origen.
+            </p>
+        </div>
+        <div class="right-section-wrapper">
+            <div class="vertical-line"></div>
+            <div class="right-section">
+
+                <div class="image-card"
+                    onclick="changeContent('¿Qué es el arraigo?', ' Este tipo de autorización de residencia, otorgada por circunstancias excepcionales, permite al beneficiario residir legalmente en España durante un año, con la posibilidad de renovación para obtener un permiso de residencia a largo plazo.  El procedimiento de arraigo, regulado por la Ley Orgánica 4/2000 y el Real Decreto 557/2011 sobre extranjería, permite a cualquier ciudadano extracomunitario vivir y trabajar en España de manera legal. Los beneficiarios pueden desempeñarse como trabajadores autónomos, o como trabajadores por cuenta ajena en todo el Territorio Nacional. El arraigo es una vía accesible para aquellos que ingresan al país como turistas y buscan regularizar su situación. Una de las principales ventajas de este procedimiento es que puede iniciarse desde España y, en comparación con otros permisos de residencia, implica trámites considerablemente menos complejos que los que se suelen exigir desde el país de origen.')">
+                    <img class="roots-photo" src="imagenes/inmigración1.png" alt="Imagen">
+                    <p>¿Qué es el arraigo? </p>
+                </div>
+
+                <div class="image-card"  onclick="changeContent('¿Tipos de arraigo?', `En la actualidad en España se valoran cuatro tipos de arraigo, cada uno con especificaciones diferentes:
+                 <div>Arraigo Social,</div> <div>Arraigo Familiar,</div> <div>Arraigo Laboral,</div> <div>Arraigo de Formación.</div>
+                 <div style='margin-top: 10px;'>De forma general, el arraigo es una de las mejores alternativas para vivir y trabajar en España de forma legal, y se puede solicitar también desde el país de origen.</div>`)">
+                   
+                <img class="roots-photo" src="imagenes/inmigración2.png" alt="Imagen 1">
+                 <p>¿Tipos de arraigo?</p>
+                </div>
+
+
+                <div class="image-card" onclick="changeContent('Título 2', 'La abeja reina2.', 'La abeja reina2.')">
+                    <img class="roots-photo" src="imagenes/inmigración2.png" alt="Imagen 2">
+                    <p>Imagen 2</p>
+                    <p>bdefghi</p>
+                </div>
+                <div class="image-card" onclick="changeContent('Título 3', 'La abeja reina3.')">
+                    <img class="roots-photo" src="imagenes/inmigración1.png" alt="Imagen 3">
+                    <p>Imagen 3</p>
+                </div>
+                <div class="image-card" onclick="changeContent('Título 4', 'La abeja reina4.')">
+                    <img class="roots-photo" src="imagenes/inmigración1.png" alt="Imagen 4">
+                    <p>Imagen 4</p>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </body>
