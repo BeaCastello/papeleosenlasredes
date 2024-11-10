@@ -31,14 +31,11 @@ function toggleContent() {
 
 //¿Qué es un arraigo?
 
-function changeContent(newTitle, newText) {
-    document.getElementById('title').innerHTML = newTitle;
-    document.getElementById('description').innerHTML = newText;
+function changeContent(imageSrc, newTitle, newText) {
+    document.getElementById('left-image').src = imageSrc;
+    document.getElementById('title').textContent = newTitle;
+    document.getElementById('description').textContent = newText;
   }
-
-
-
-  
 
 
 
