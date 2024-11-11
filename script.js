@@ -30,13 +30,12 @@ function toggleContent() {
 
 
 //¿Qué es un arraigo?
-
-function changeContent(imageSrc, newTitle, newText) {
-    document.getElementById('left-image').src = imageSrc;
-    document.getElementById('title').textContent = newTitle;
-    document.getElementById('description').textContent = newText;
-  }
-
+ 
+  function changeContent(imagePath, title, content) {
+    document.getElementById('left-image').src = imagePath;
+    document.getElementById('title').innerText = title;
+    document.getElementById('description').innerHTML = content; // Usa innerHTML para interpretar HTML
+}
 
 
 
