@@ -484,7 +484,7 @@ line-height: 22.5px;
   
   .left-section{
     flex: 1; 
-    margin-left: 50px;   
+    margin-left: 130px;   
     
   }
     .roots-title{
@@ -503,7 +503,7 @@ line-height: 22.5px;
     margin-bottom: 15px;
   }
   .right-section{
-margin-right: 57px;
+   margin-right: 57px;
   }
 
   .main-image{
@@ -520,9 +520,7 @@ margin-right: 57px;
     background-color: #000;
     margin: 0 20px;
       }
-   
-    
-  
+     
   .image-card img {
     width: 230px;
     border-radius: 8px;
@@ -552,10 +550,118 @@ margin-right: 57px;
   
     .image-card {
       width: 100px;
+      transition: transform 0.5s ease-in-out;
     }
   }
-  
+ 
+.image-card:hover {
+    transform: rotate(360deg) scale(1.1);
+}
+/*  Estilos Servicios  */
+.services-title{
+    display: flex;  
+    color: black;
+    font-size: 32px;
+    justify-content: center;
+    margin-top: 40px;    
+}
+.content-services {
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 17px 0px 0px 0px;
+    min-width: 100%;
+}
 
+.content-services h2 {
+    font-size: 26px;
+    color: #00296b;
+    margin-bottom: 30px;
+    margin-top: 75px;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+
+}
+
+.slide {
+    display: flex;
+    transition: transform 0.8s ease;
+    min-width: 100%;
+}
+
+.card {
+    margin: 50px;
+    overflow: hidden;
+    transition: transform 0.9s ease-in-out;
+}
+
+.card img {
+    width: 100%; 
+        }
+   
+.card img:hover {
+    filter: grayscale(80%);
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;       
+}
+
+ .card:hover  .rotating {
+    display: block;
+    margin: 0 auto; 
+    transition: transform 0.5s ease-in-out;
+}
+
+.card:hover .clicked {
+    transform: rotate(360deg);
+}
+
+.card h3 {
+    font-size: 18px;
+    color: black;
+    padding: 15px;
+    text-align: center;
+}
+
+.card a {
+    color: black;
+    font-size: 14px;
+    padding: 9px;
+    display: inline-block;
+    text-decoration: none;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.page {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 18px;
+    color: #00296b;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: #e0e0e0;
+}
+
+.page.active {
+    background-color: #00296b;
+    color: white;
+}
 
 
 

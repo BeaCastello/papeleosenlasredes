@@ -37,13 +37,28 @@ function toggleContent() {
     document.getElementById('description').innerHTML = content; // Usa innerHTML para interpretar HTML
 }
 
+// Carrusel services
 
+function showSlide(index) {
+    const slides = document.querySelectorAll(".slide");
+    const pages = document.querySelectorAll(".page");
 
+    slides.forEach((slide, i) => {
+        slide.style.transform = `translateX(${-(index * 100)}%)`;
+        pages[i].classList.remove("active");
+    });
+    pages[index].classList.add("active");
+}
 
-
-
-
-
+// Rotación imagen servicios 
+function rotateSelectedImage(image) {
+    if (!image.classList.contains('clicked')) {
+        image.classList.add('clicked');
+        setTimeout(() => {
+            image.classList.remove('clicked'); // Remueve la clase después de la animación para que pueda girar de nuevo
+        }, 500); // 500ms debe coincidir con la duración de la animación CSS
+    }
+}
 
 
 
