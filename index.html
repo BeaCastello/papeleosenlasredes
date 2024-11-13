@@ -190,8 +190,14 @@
 
             <div class="image-card" onclick="changeContent('imagenes/arraigo4.png','¿Qué es el informe favorable para arraigo social?', 'El informe favorable es fundamental para acreditar la integración social en el Estado español y constituye uno de los requisitos esenciales para obtener el arraigo social. <br><br> Este informe debe incluir información sobre los ingresos económicos del solicitante, cualquier vínculo familiar con residentes en España, el tiempo de empadronamiento en su domicilio actual, entre otros datos relevantes. <br><br> Para su emisión, se llevará a cabo una entrevista en el Ayuntamiento correspondiente, en la cual el solicitante deberá demostrar su grado de vinculación e integración en la sociedad española. Esto incluye el conocimiento del idioma (hablar y comprender el español, y en el caso de la Comunidad Autónoma de Cataluña, también el catalán), así como una familiaridad con las costumbres y cultura locales. <br><br> A través de nuestro correo electrónico, le ofrecemos asistencia para preparar esta entrevista. Le proporcionamos un listado de las preguntas más frecuentes y le aconsejamos sobre las respuestas más adecuadas para aumentar las posibilidades de éxito de su solicitud. <br><br>Es importante tener en cuenta que cada Comunidad Autónoma puede requerir requisitos adicionales. Por ejemplo, en Cataluña, se exige la realización de un curso de 45 horas de catalán para demostrar el conocimiento de la lengua. <br><br> Es fundamental revisar con detalle los requisitos específicos de la Comunidad Autónoma de residencia para asegurarse de cumplir con todas las exigencias y evitar cualquier omisión. ')">
                 <img class="roots-photo" src="imagenes/arraigo4.png" alt="Imagen 4">
-                <p> ¿Qué es el informe favorable...? </p>
+                <p> ¿Qué es el informe ...? </p>
             </div>
+
+            <div class="image-card" onclick="changeContent('imagenes/arraigo6.png','¿Por qué el arraigo social es el más solicitado?', 'El arraigo social es el procedimiento de regularización más solicitado en España por personas extranjeras en situación irregular, debido a que ofrece una vía accesible, legal y práctica para obtener un permiso de residencia. Este recurso ha ganado popularidad porque, después de un tiempo en el país, permite integrarse plenamente al extranjero, accediendo así a derechos y oportunidades. <br><br> A diferencia de otros permisos, el arraigo social no exige haber entrado legalmente a España ni contar con una visa previa, sin embargo, se deben cumplir una serie de requisitos específicos, que son fundamentales para formalizar este tipo de arraigo. <br><br> Entre estos podemos señalar: <br><br> ✓Haber residido en España de manera continuada durante tres años, y para demostrar esta condición se pueden presentar empadronamientos, facturas de servicios, cuentas bancarias, compras, o documentos de salud.  <br><br>  ✓ Contar con una oferta de trabajo ya sea a tiempo parcial, o fijos-discontinuos, pero de al menos 30 horas semanales y percibiendo una nómina como mínimo del S.M.I (Salario Mínimo Interprofesional) establecido. <br><br> ✓ Demostrar integración en la sociedad, lo cual se puede acreditar mediante un informe positivo de integración social emitido por los servicios sociales, o por tener familiares residentes en España. <br><br> ✓ Si la persona que solicita el arraigo quiere establecerse como autónomo desempeñando su propia actividad empresarial, o dispone de medios económicos suficientes 100 % del Ingreso Mínimo Vital mensual, también puede proceder a esta solicitud.Es importante tener en cuenta que la empresa contratante, debe reunir unos requisitos para realizar el Precontrato, o Contrato al futuro trabajador. <br><br> A continuación, los detallamos: <br><br>✓ La empresa debe llevar un año como mínimo en funcionamiento. <br><br>✓ Debe contar con toda la documentación necesaria que demuestre su identidad y solvencia. <br><br>✓ No deben aparecer deudas de esta, cualquier tipo de irregularidad, por mínima que sea, pondría en peligro la formalización del contrato, y por tanto el procedimiento de arraigo.')">
+                <img class="roots-photo" src="imagenes/arraigo6.png" alt="Imagen 5">
+                <p> El arraigo social es el más... </p>
+            </div>
+
         </div>
 
     </div>
@@ -244,7 +250,110 @@
     </div>
 </div>
 
+<!-- Contact -->
+<div class="content-contact">
+    <div class="overlay-black">
+        <h1 class="contact-us-title">CONTÁCTANOS</h1>
+        <p>Estamos aquí para ayudarte, contáctanos hoy</p>
+        <button id="contactButton" class="contactame">Contáctame</button>
+        <div id="contactAlert" class="alert">
+            <div class="content-alert">
+                <span class="close-button">&times;</span>
+                <h2 class="form-text">CONECTA CON NOSOTROS</h2>
 
+                <form id="contactForm">
+                    <label for="name"><b>Nombre:</b></label>
+                    <input class="input-contactForm" type="text" id="name" name="name" required>
+
+                    <label class="email" for="email"><b>E-mail:</b></label>
+                    <input class="input-contactForm" type="email" id="email" name="email" required>
+
+                    <label class="consulta" for="consulta"><b>Mensaje:</b></label>
+                    <textarea id="consulta" name="consulta" required></textarea>
+
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        Acepto el <a href="#">aviso legal/política de privacidad</a>.
+                    </label>
+
+                    <button class="sendButton" type="submit" id="sendButton">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+    <script>
+        (function () {
+            emailjs.init("CPlHCPmFSQXzJ332c");  
+        })();
+    </script>
+
+    <footer class="footer">
+        <div class="footer-container">
+            
+            <!-- Footer -->
+            <div class="footer-redes-sociales">
+                <h3>Síguenos</h3>
+                <ul>
+                    <li><a href="#" target="_blank"><img src="icon-facebook.png" alt="Facebook"> Facebook</a></li>
+                    <li><a href="#" target="_blank"><img src="icon-twitter.png" alt="Twitter"> Twitter</a></li>
+                    <li><a href="#" target="_blank"><img src="icon-instagram.png" alt="Instagram"> Instagram</a></li>
+                    <li><a href="#" target="_blank"><img src="icon-linkedin.png" alt="LinkedIn"> LinkedIn</a></li>
+                </ul>
+            </div>
+    
+            <!-- Partes del Menú -->
+            <div class="footer-section menu">
+                <h3>Menú</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+    
+            <!-- Derechos de Autor -->
+            <div class="footer-section derechos-autor">
+                <p>&copy; 2023 Todos los derechos reservados. Nombre de tu Empresa</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Conexión al WhatsApp -->
+<a href="https://api.whatsapp.com/send?phone=34642643599" class="whatsapp-button" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+<!-- Modal con el formulario de contacto -->
+<div id="whatsappModal" class="modal">
+<div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-header">
+        <img src="https://via.placeholder.com/50" alt="Foto">
+        <h2>Formulario de Contacto</h2>
+    </div>
+    <form id="contactForm" onsubmit="sendMessage(event)">
+        <div class="form-group">
+            <label for="name">Nombre del Cliente</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Describa su Consulta</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+            <input type="checkbox" id="privacyPolicy" required>
+            <label for="privacyPolicy">Acepto la política de privacidad</label>
+        </div>
+        <button type="submit" class="submit-btn">Enviar a WhatsApp</button>
+    </form>
+</div>
 
 
 
