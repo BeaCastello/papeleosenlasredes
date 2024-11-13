@@ -595,10 +595,21 @@ line-height: 22.5px;
 }
 
 .card {
+    background-color: #dbe9f7;
     margin: 50px;
     overflow: hidden;
-    transition: transform 0.9s ease-in-out;
+    display: inline-block;
+    width: 300px; /* Ajusta el tamaño según tus necesidades */
+    transition: transform 1s ease-in-out;
+    transform-origin: center; /* Pivote desde el borde izquierdo */
+    perspective: 1000px;
+    
 }
+
+.card.clicked {
+    transform: rotateY(360deg); /* Rotación 3D */
+}
+
 
 .card img {
     width: 100%; 
@@ -611,17 +622,7 @@ line-height: 22.5px;
     cursor: pointer;       
 }
 
- .card:hover  .rotating {
-    display: block;
-    margin: 0 auto; 
-    transition: transform 0.5s ease-in-out;
-}
-
-.card:hover .clicked {
-    transform: rotate(360deg);
-}
-
-.card h3 {
+ .card h3 {
     font-size: 18px;
     color: black;
     padding: 15px;
@@ -653,7 +654,7 @@ line-height: 22.5px;
     padding: 8px 12px;
     font-size: 18px;
     color: #00296b;
-    border-radius: 50%;
+    border-radius: 20%;
     margin: 0 5px;
     background-color: #e0e0e0;
 }
@@ -661,6 +662,7 @@ line-height: 22.5px;
 .page.active {
     background-color: #00296b;
     color: white;
+    
 }
 
 

@@ -51,14 +51,10 @@ function showSlide(index) {
 }
 
 // Rotación imagen servicios 
-function rotateSelectedImage(image) {
-    if (!image.classList.contains('clicked')) {
-        image.classList.add('clicked');
-        setTimeout(() => {
-            image.classList.remove('clicked'); // Remueve la clase después de la animación para que pueda girar de nuevo
-        }, 500); // 500ms debe coincidir con la duración de la animación CSS
+function toggleCardEffect(card) {
+    if (!card.classList.contains('clicked')) {
+        card.classList.add('clicked'); // Añade la rotación
+    } else {
+        card.classList.remove('clicked'); // Revierte la rotación
     }
 }
-
-
-
