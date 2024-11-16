@@ -31,10 +31,36 @@ function toggleContent() {
 
 //¿Qué es un arraigo?
  
-  function changeContent(imagePath, title, content) {
-    document.getElementById('left-image').src = imagePath;
-    document.getElementById('title').innerText = title;
-    document.getElementById('description').innerHTML = content; // Usa innerHTML para interpretar HTML
+function changeContent(title, imageSrc, title1, description) {
+    const titleElement = document.getElementById('title');
+    const imageElement = document.getElementById('left-image');
+    const titleElementDuplic = document.getElementById('title1');
+    const descriptionElement = document.getElementById('description');
+   
+
+    // Actualiza el titulo
+    titleElement.innerHTML = title;
+
+    // Actualiza la imagen
+    imageElement.src = imageSrc;
+    imageElement.alt = title1;
+
+
+    // Actualiza el título y la descripción
+    titleElementDuplic.innerHTML = title1;
+    descriptionElement.innerHTML = description;
+
+    // Inserta el título nuevamente después de la imagen
+    const duplicateTitle = document.createElement('h2');
+    duplicateTitle.innerHTML = title1;
+    duplicateTitle.className = 'roots-title';
+
+    // Inserta el nuevo título antes de la descripción y después de la imagen
+    if (textContainer.querySelector('.title1')) {
+        textContainer.querySelector('.title1').remove();
+    }
+    duplicateTitle.classList.add('title1');
+    textContainer.insertBefore(title1, descriptionElement);
 }
 
 // Carrusel services
@@ -77,10 +103,19 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
 
 // Alerta 
- function showModal() {
-    document.getElementById('myModal').style.display = 'block';
-}
+const alertBtn = document.getElementById('alertBtn');
+const imageAlert = document.getElementById('imageAlert');
 
-function closeModal() {
-    document.getElementById('myModal').style.display = 'none';
-}
+alertBtn.addEventListener('click', function() {
+    imageAlert.style.display = 'block'; // A dar click muestra la imagen
+});
+
+// Se oculta la imagen cuando el cursor está fuera del botón o de la imagen
+document.addEventListener('mousemove', function(event) {
+    const isOutsideBtn = !alertBtn.contains(event.target);
+    const isOutsideAlert = !imageAlert.contains(event.target);
+
+    if (isOutsideBtn && isOutsideAlert) {
+        imageAlert.style.display = 'none'; 
+    }
+});

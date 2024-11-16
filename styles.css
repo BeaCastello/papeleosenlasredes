@@ -127,41 +127,24 @@ h3 {
 
 
 /* Alerta */
-#myModal {
+.image-alert {
     display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 2px solid #333;
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    text-align: center;
-}
-.logoAlerta {
-    width: 150px;
-}
-
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
-}
-.contact-item img {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-}
-.close-btn {
-    background-color: #f44336;
-    color: rgb(20, 19, 19);
-    border: none;
+    position: absolute;
+    top: 70px; 
+    float: left; /* Ajusta la posición según sea necesario */
+    border: 2px solid #ccc;
+    background-color: #fff;
     padding: 10px;
-    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    margin-left: 430px;
+   
 }
 
+.image-alert img {
+    max-width: 300px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+}
 /* Texto animado */
 .animation {
     overflow: hidden;
@@ -251,7 +234,7 @@ h3 {
 hr {
     margin-top: 25px;
     margin-bottom: 10px;
-    max-width: 87%;
+    max-width: 95%;
     justify-content: center;
 }
 
@@ -400,6 +383,7 @@ hr {
 .intro-text {
     margin-bottom: 15px;
     text-align: justify;
+    width: 98%;
 }
 
 .additional-title {
