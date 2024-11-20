@@ -7,7 +7,7 @@ function toggleMenu() {
 document.addEventListener('click', (e) => {
     const menuHamburguesa = document.getElementById('menu-hamburguesa');
     const navLinks = document.getElementById('nav-links');
-    
+
     if (!menuHamburguesa.contains(e.target) && !navLinks.contains(e.target)) {
         navLinks.classList.remove('show');
     }
@@ -30,13 +30,13 @@ function toggleContent() {
 
 
 //¿Qué es un arraigo?
- 
+
 function changeContent(title, imageSrc, title1, description) {
     const titleElement = document.getElementById('title');
     const imageElement = document.getElementById('left-image');
     const titleElementDuplic = document.getElementById('title1');
     const descriptionElement = document.getElementById('description');
-   
+
 
     // Actualiza el titulo
     titleElement.innerHTML = title;
@@ -79,24 +79,24 @@ function showSlide(index) {
 // Rotación imagen servicios 
 function toggleCardEffect(card) {
     if (!card.classList.contains('clicked')) {
-        card.classList.add('clicked'); 
+        card.classList.add('clicked');
     } else {
-        card.classList.remove('clicked'); 
+        card.classList.remove('clicked');
     }
 }
 // Enlace con emailjs
 
-(function() {
-    emailjs.init("zbgwQc95PFCFL9D6Y"); 
+(function () {
+    emailjs.init("zbgwQc95PFCFL9D6Y");
 })();
 
-document.getElementById('contactForm').addEventListener('submit', function(event) {
+document.getElementById('contactForm').addEventListener('submit', function (event) {
     event.preventDefault();
 
     emailjs.sendForm('service_e4rgq0q', 'template_bjg3pgj', this)
-        .then(function() {
+        .then(function () {
             alert('Correo enviado con éxito!');
-        }, function(error) {
+        }, function (error) {
             alert('Error al enviar el correo: ' + JSON.stringify(error));
         });
 });
@@ -106,16 +106,95 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 const alertBtn = document.getElementById('alertBtn');
 const imageAlert = document.getElementById('imageAlert');
 
-alertBtn.addEventListener('click', function() {
+alertBtn.addEventListener('click', function () {
     imageAlert.style.display = 'block'; // A dar click muestra la imagen
 });
 
 // Se oculta la imagen cuando el cursor está fuera del botón o de la imagen
-document.addEventListener('mousemove', function(event) {
+document.addEventListener('mousemove', function (event) {
     const isOutsideBtn = !alertBtn.contains(event.target);
     const isOutsideAlert = !imageAlert.contains(event.target);
 
     if (isOutsideBtn && isOutsideAlert) {
-        imageAlert.style.display = 'none'; 
+        imageAlert.style.display = 'none';
+    }
+});
+
+
+// Función para mostrar el banner si no hay una cookie de aceptación
+window.onload = function () {
+    if (!getCookie("cookiesAccepted")) {
+        document.getElementById("cookieBanner").style.display = "block";
+    }
+};
+
+// Función para aceptar las cookies y ocultar el banner
+function acceptCookies() {
+    setCookie("cookiesAccepted", "true", 365); // Guarda la aceptación por 1 año
+    document.getElementById("cookieBanner").style.display = "none";
+}
+
+// Función para crear una cookie
+function setCookie(name, value, days) {
+    let date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    let expires = "expires=" + date.toUTCString();
+    document.cookie = name + "=" + value + ";" + expires + ";path=/";
+}
+
+// Función para leer una cookie
+function getCookie(name) {
+    let nameEQ = name + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let cookieArray = decodedCookie.split(';');
+    for (let i = 0; i < cookieArray.length; i++) {
+        let cookie = cookieArray[i].trim();
+        if (cookie.indexOf(nameEQ) === 0) {
+            return cookie.substring(nameEQ.length, cookie.length);
+        }
+    }
+    return null;
+}
+
+// Función para mostrar el sidebar
+
+let sidebarTimeout;
+
+function showSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    sidebar.style.right = '0';
+
+    clearTimeout(sidebarTimeout);
+}
+
+// ocultar el sidebar
+function hideSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    sidebar.style.right = '-60px';
+}
+
+// Mostrar el sidebar al hacer scroll
+window.addEventListener('scroll', function () {
+    showSidebar();
+
+    // Configura el timeout para ocultar el sidebar después de 3 segundos sin interacción
+    sidebarTimeout = setTimeout(hideSidebar, 3000);
+});
+
+// Mantener el sidebar visible al pasar el mouse por encima
+document.getElementById('sidebar').addEventListener('mouseenter', function () {
+    showSidebar();
+});
+
+// Configura el sidebar para ocultarse después de 3 segundos al salir de él
+document.getElementById('sidebar').addEventListener('mouseleave', function () {
+    sidebarTimeout = setTimeout(hideSidebar, 3000);
+});
+
+// Ocultar el sidebar al hacer clic fuera de él
+document.addEventListener('click', function (event) {
+    const sidebar = document.getElementById('sidebar');
+    if (!sidebar.contains(event.target)) {
+        hideSidebar();
     }
 });
