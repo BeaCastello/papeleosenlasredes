@@ -3,7 +3,6 @@ function toggleMenu() {
     navLinks.classList.toggle('show');
 }
 
-// Añadir un listener para cerrar el menú al hacer clic fuera de él (opcional)
 document.addEventListener('click', (e) => {
     const menuHamburguesa = document.getElementById('menu-hamburguesa');
     const navLinks = document.getElementById('nav-links');
@@ -156,45 +155,3 @@ function getCookie(name) {
     return null;
 }
 
-// Función para mostrar el sidebar
-
-let sidebarTimeout;
-
-function showSidebar() {
-    const sidebar = document.getElementById('sidebar');
-    sidebar.style.right = '0';
-
-    clearTimeout(sidebarTimeout);
-}
-
-// ocultar el sidebar
-function hideSidebar() {
-    const sidebar = document.getElementById('sidebar');
-    sidebar.style.right = '-60px';
-}
-
-// Mostrar el sidebar al hacer scroll
-window.addEventListener('scroll', function () {
-    showSidebar();
-
-    // Configura el timeout para ocultar el sidebar después de 3 segundos sin interacción
-    sidebarTimeout = setTimeout(hideSidebar, 3000);
-});
-
-// Mantener el sidebar visible al pasar el mouse por encima
-document.getElementById('sidebar').addEventListener('mouseenter', function () {
-    showSidebar();
-});
-
-// Configura el sidebar para ocultarse después de 3 segundos al salir de él
-document.getElementById('sidebar').addEventListener('mouseleave', function () {
-    sidebarTimeout = setTimeout(hideSidebar, 3000);
-});
-
-// Ocultar el sidebar al hacer clic fuera de él
-document.addEventListener('click', function (event) {
-    const sidebar = document.getElementById('sidebar');
-    if (!sidebar.contains(event.target)) {
-        hideSidebar();
-    }
-});
