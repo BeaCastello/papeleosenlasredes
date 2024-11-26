@@ -21,50 +21,20 @@ hamburger.addEventListener("click", function() {
 })();
 
 
-// Carrusel services
+// Enlace con emailjs
 
-function showSlide(index) {
-    const slides = document.querySelectorAll(".slide");
-    const pages = document.querySelectorAll(".page");
+(function () {
+    emailjs.init("zbgwQc95PFCFL9D6Y");
+})();
 
-    slides.forEach((slide, i) => {
-        slide.style.transform = `translateX(${-(index * 100)}%)`;
-        pages[i].classList.remove("active");
-    });
-    pages[index].classList.add("active");
-}
+document.getElementById('contactForm').addEventListener('submit', function (event) {
+    event.preventDefault();
 
-
-// EmailJS
-const contactButton = document.getElementById("contactButton");
-const contactAlert = document.getElementById("contactAlert");
-const closeButton = document.querySelector(".close-button");
-
-contactButton.onclick = function() {
-    contactAlert.style.display = "flex";
-};
-
-closeButton.onclick = function() {
-    contactAlert.style.display = "none";
-};
-
-window.onclick = function(event) {
-    if (event.target == contactAlert) {
-        contactAlert.style.display = "none";
-    }
-};
-
-// Enviar el formulario al correo
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-    e.preventDefault();
-    
-    
     emailjs.sendForm('service_e4rgq0q', 'template_bjg3pgj', this)
-        .then(() => {
-            alert('Mensaje enviado exitosamente');
-            contactAlert.style.display = "none";
-        }, (error) => {
-            alert('Error al enviar el mensaje: ' + JSON.stringify(error));
-        }); 
+        .then(function () {
+            alert('Correo enviado con éxito!');
+        }, function (error) {
+            alert('Error al enviar el correo: ' + JSON.stringify(error));
+        });
 });
 
