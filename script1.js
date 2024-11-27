@@ -35,7 +35,7 @@ document.getElementById('contactForm').addEventListener('submit', function (even
         });
 });
 
-// Obtener el contador del almacenamiento local
+// Contador de visitas
 
 function updateVisitCounter() {
     
