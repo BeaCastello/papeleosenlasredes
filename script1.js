@@ -16,10 +16,7 @@ hamburger.addEventListener("click", function() {
     navLinks.classList.toggle("active");
 });
 
-  (function() {
-    emailjs.init("CPlHCPmFSQXzJ332c"); 
-})();
-
+ 
 
 // Enlace con emailjs
 
@@ -37,4 +34,27 @@ document.getElementById('contactForm').addEventListener('submit', function (even
             alert('Error al enviar el correo: ' + JSON.stringify(error));
         });
 });
+
+// Obtener el contador del almacenamiento local
+
+function updateVisitCounter() {
+    
+    let visits = localStorage.getItem('visitCounter');
+  
+    
+    if (!visits) {
+      visits = 0;
+    } else {
+      visits = parseInt(visits);
+    }
+  
+   
+    visits += 1;
+    
+    document.getElementById('counter').textContent = visits;  
+  
+    localStorage.setItem('visitCounter', visits);
+  }
+   
+  updateVisitCounter();
 
