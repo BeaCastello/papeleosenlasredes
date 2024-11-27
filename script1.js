@@ -27,7 +27,7 @@ hamburger.addEventListener("click", function() {
 document.getElementById('contactForm').addEventListener('submit', function (event) {
     event.preventDefault();
 
-    emailjs.sendForm('service_e4rgq0q', 'template_bjg3pgj', this)
+    emailjs.sendForm('service_j7wbf3i', 'template_bjg3pgj', this)
         .then(function () {
             alert('Correo enviado con éxito!');
         }, function (error) {
@@ -35,26 +35,4 @@ document.getElementById('contactForm').addEventListener('submit', function (even
         });
 });
 
-// Contador de visitas
-
-function updateVisitCounter() {
-    
-    let visits = localStorage.getItem('visitCounter');
-  
-    
-    if (!visits) {
-      visits = 0;
-    } else {
-      visits = parseInt(visits);
-    }
-  
-   
-    visits += 1;
-    
-    document.getElementById('counter').textContent = visits;  
-  
-    localStorage.setItem('visitCounter', visits);
-  }
-   
-  updateVisitCounter();
 

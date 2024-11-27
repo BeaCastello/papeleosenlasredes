@@ -63,13 +63,13 @@
 
         <div class="contact-form">
             <h2>Consultanos sin compromiso</h2>
-            <form>
+            <form id="contactForm">
                 <div class="form-group">
                     <input type="text" placeholder="Nombre" required>
                     <input type="text" placeholder="Email" required>
                 </div>
                 <div class="form-group">
-                    <input type="tel" placeholder="Número de teléfono" required>
+                    <input type="text" placeholder="Número de teléfono" name="phone" required>
                     <p class="text-client">¿Eres cliente? </p><select name="select" required>
                         <option value="value1" selected>Si</option>
                         <option value="value2">No</option>
@@ -77,12 +77,12 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <textarea rows="4" placeholder="Mensaje" required></textarea>
+                    <textarea rows="4" placeholder="Mensaje" name="consulta" required></textarea>
                 </div>
                 <input type="checkbox" id="terms" name="terms" required> Acepto el <a href="#" class="link-terms">aviso
                     legal/política de privacidad</a>.
 
-                <button class="sendButton" type="submit" id="sendButton">Enviar</button>
+                <button class="sendButton" type="submit" id="submit">Enviar</button>
             </form>
         </div>
 
@@ -97,16 +97,14 @@
                     de España</a>
             </div>
             <!-- Globo e información -->
-            <div class="globe-container">
-                <img src="imagenes/globomundo.png" alt="Globo Mundo">
-                <div id="counter">0</div>
-                <p>visitas.</p>
+            <div>
+                <img src="imagenes/globoMundo.gif" alt="Globo Mundo" class="globe-container">-->  
+                <img class="views-counter" alt="Hits" src="https://hits.sh/papeleosenlasredes.com.svg?style=flat-square&label=Visitas&labelColor=343c44&" />
             </div>
-            <script src="script1.js"></script>
         </div>
     </div>
     </div>
 
-   </body>
+</body>
 
 </html>
