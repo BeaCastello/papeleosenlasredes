@@ -1,20 +1,20 @@
 const navbar = document.getElementById("navbar");
-const hamburger = document.getElementById("hamburger");
+// const hamburger = document.getElementById("hamburger");
 const navLinks = document.querySelector(".nav-links");
 
 // Cambio la transparencia del menú al hacer scroll
-window.addEventListener("scroll", function() {
-    if (window.scrollY > 50) {
-        navbar.classList.add("transparent");
-    } else {
-        navbar.classList.remove("transparent");
-    }
-});
+// window.addEventListener("scroll", function() {
+//     if (window.scrollY > 50) {
+//         navbar.classList.add("transparent");
+//     } else {
+//         navbar.classList.remove("transparent");
+//     }
+// });
 
 
-hamburger.addEventListener("click", function() {
-    navLinks.classList.toggle("active");
-});
+// hamburger.addEventListener("click", function() {
+//     navLinks.classList.toggle("active");
+// });
 
  
 
