@@ -1,15 +1,15 @@
-// Inicializar el contador
-let visitCount = localStorage.getItem('visitCount');
 
-// Si no existe un contador previo, inicializar a 1
-if (!visitCount) {
-  visitCount = 1;
-} else {
-  visitCount = parseInt(visitCount) + 1; // Incrementar el contador
-}
+(function () {
+    emailjs.init("H75WbyQSMoVVgsGfI");
+})();
 
-// Guardar el nuevo valor en localStorage
-localStorage.setItem('visitCount', visitCount);
+document.getElementById('contactForm').addEventListener('submit', function (event) {
+    event.preventDefault();
 
-// Mostrar el contador en el elemento con id "visit-counter"
-document.getElementById('visit-counter').textContent = visitCount;
+    emailjs.sendForm("service_cov3d0q","template_hb4zrx5", this)
+        .then(function () {
+            alert('Correo enviado con éxito!');
+        }, function (error) {
+            alert('Error al enviar el correo: ' + JSON.stringify(error));
+        });
+});

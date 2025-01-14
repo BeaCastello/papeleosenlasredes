@@ -1,38 +1,31 @@
-const navbar = document.getElementById("navbar");
-// const hamburger = document.getElementById("hamburger");
-const navLinks = document.querySelector(".nav-links");
+function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('show');
+}
 
-// Cambio la transparencia del menú al hacer scroll
-// window.addEventListener("scroll", function() {
-//     if (window.scrollY > 50) {
-//         navbar.classList.add("transparent");
-//     } else {
-//         navbar.classList.remove("transparent");
-//     }
-// });
+document.addEventListener('click', (e) => {
+    const menuHamburguesa = document.getElementById('menu-hamburguesa');
+    const navLinks = document.getElementById('nav-links');
 
-
-// hamburger.addEventListener("click", function() {
-//     navLinks.classList.toggle("active");
-// });
-
+    if (!menuHamburguesa.contains(e.target) && !navLinks.contains(e.target)) {
+        navLinks.classList.remove('show');
+    }
+});
  
 
 // Enlace con emailjs
 
 (function () {
-    emailjs.init("zbgwQc95PFCFL9D6Y");
+    emailjs.init("H75WbyQSMoVVgsGfI");
 })();
 
 document.getElementById('contactForm').addEventListener('submit', function (event) {
     event.preventDefault();
 
-    emailjs.sendForm('service_j7wbf3i', 'template_bjg3pgj', this)
+    emailjs.sendForm("service_ghupzau","template_0aug3ln", this)
         .then(function () {
             alert('Correo enviado con éxito!');
         }, function (error) {
             alert('Error al enviar el correo: ' + JSON.stringify(error));
         });
 });
-
-

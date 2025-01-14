@@ -1,17 +1,3 @@
-function toggleMenu() {
-    const navLinks = document.getElementById('nav-links');
-    navLinks.classList.toggle('show');
-}
-
-document.addEventListener('click', (e) => {
-    const menuHamburguesa = document.getElementById('menu-hamburguesa');
-    const navLinks = document.getElementById('nav-links');
-
-    if (!menuHamburguesa.contains(e.target) && !navLinks.contains(e.target)) {
-        navLinks.classList.remove('show');
-    }
-});
-
 //Botón leer más para la sección:¿Qué es un inmigrante?
 
 function toggleContent() {
@@ -26,7 +12,6 @@ function toggleContent() {
         button.textContent = 'Mostrar menos';
     }
 }
-
 
 //¿Qué es un arraigo?
 
@@ -75,24 +60,16 @@ function showSlide(index) {
     pages[index].classList.add("active");
 }
 
-// Rotación imagen servicios 
-function toggleCardEffect(card) {
-    if (!card.classList.contains('clicked')) {
-        card.classList.add('clicked');
-    } else {
-        card.classList.remove('clicked');
-    }
-}
 // Enlace con emailjs
 
 (function () {
-    emailjs.init("zbgwQc95PFCFL9D6Y");
+    emailjs.init("H75WbyQSMoVVgsGfI");
 })();
 
 document.getElementById('contactForm').addEventListener('submit', function (event) {
     event.preventDefault();
 
-    emailjs.sendForm('service_e4rgq0q', 'template_bjg3pgj', this)
+    emailjs.sendForm("service_cov3d0q","template_hb4zrx5", this)
         .then(function () {
             alert('Correo enviado con éxito!');
         }, function (error) {
@@ -101,57 +78,8 @@ document.getElementById('contactForm').addEventListener('submit', function (even
 });
 
 
-// Alerta 
-const alertBtn = document.getElementById('alertBtn');
-const imageAlert = document.getElementById('imageAlert');
-
-alertBtn.addEventListener('click', function () {
-    imageAlert.style.display = 'block'; // A dar click muestra la imagen
-});
-
-// Se oculta la imagen cuando el cursor está fuera del botón o de la imagen
-document.addEventListener('mousemove', function (event) {
-    const isOutsideBtn = !alertBtn.contains(event.target);
-    const isOutsideAlert = !imageAlert.contains(event.target);
-
-    if (isOutsideBtn && isOutsideAlert) {
-        imageAlert.style.display = 'none';
-    }
-});
 
 
-// Función para mostrar el banner si no hay una cookie de aceptación
-window.onload = function () {
-    if (!getCookie("cookiesAccepted")) {
-        document.getElementById("cookieBanner").style.display = "block";
-    }
-};
 
-// Función para aceptar las cookies y ocultar el banner
-function acceptCookies() {
-    setCookie("cookiesAccepted", "true", 365); // Guarda la aceptación por 1 año
-    document.getElementById("cookieBanner").style.display = "none";
-}
 
-// Función para crear una cookie
-function setCookie(name, value, days) {
-    let date = new Date();
-    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-    let expires = "expires=" + date.toUTCString();
-    document.cookie = name + "=" + value + ";" + expires + ";path=/";
-}
-
-// Función para leer una cookie
-function getCookie(name) {
-    let nameEQ = name + "=";
-    let decodedCookie = decodeURIComponent(document.cookie);
-    let cookieArray = decodedCookie.split(';');
-    for (let i = 0; i < cookieArray.length; i++) {
-        let cookie = cookieArray[i].trim();
-        if (cookie.indexOf(nameEQ) === 0) {
-            return cookie.substring(nameEQ.length, cookie.length);
-        }
-    }
-    return null;
-}
-
+    

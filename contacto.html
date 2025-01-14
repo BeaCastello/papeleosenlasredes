@@ -14,48 +14,43 @@
 </head>
 
 <body>
-    <header class="navbar">
-        <img class="Logo" src="imagenes/nameLogo1.png" alt="Logo"></img>
-        <span class="hamburguesa" id="menu-hamburguesa" onclick="toggleMenu()">&#9776;</span>
-        <ul class="navlinks" id="nav-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="#quienes-somos">Quienes somos</a></li>
-            <li class="services"><a href="#services" id="services-Link">Servicios</a>
-                <ul class="submenu" id="submenu">
-                    <li class="lista"><a href="#">Gestoría</a></li>
-                    <li class="lista"><a href="#">Apoyo a la comundad ...</a></li>
-                    <li class="lista"><a href="#">Formación de expediente</a></li>
-                    <li class="lista"><a href="#">Teleayuda</a></li>
-                    <li class="lista"><a href="#">Seguros médicos</a></li>
-                    <li class="lista"><a href="#">Legalización de documentos</a></li>
+    <header>
+        <section class="banner" id="inicio">
+            <section class="navbar">
+                <img class="Logo" src="imagenes/nameLogo.png" alt="Logo"></img>
+                <span class="hamburguesa" id="menu-hamburguesa" onclick="toggleMenu()">&#9776;</span>
+                <ul class="navlinks" id="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quienesomos.html">Quienes somos</a></li>
+                    <li class="services"><a href="#services" id="services-Link">Servicios</a>
+                        <ul class="submenu" id="submenu">
+                            <li class="lista"><a href="#">Gestoría</a></li>
+                            <li class="lista"><a href="#">Apoyo a la comundad ...</a></li>
+                            <li class="lista"><a href="#">Formación de expediente</a></li>
+                            <li class="lista"><a href="#">Teleayuda</a></li>
+                            <li class="lista"><a href="#">Seguros médicos</a></li>
+                            <li class="lista"><a href="#">Legalización de documentos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="#blog">Blog</a></li>
                 </ul>
-            </li>
-            <li><a href="#contact">Contacto</a></li>
-            <li><a href="#blog">Blog</a></li>
-        </ul>
-    </header>
+            </section>
+            <div class="banner-text">
+                <h1>Contáctanos</h1>
+                <p>Estamos aquí para ayudarte</p>
+            </div>
+        </section>
 
-    <section class="banner" id="inicio">
-        <video autoplay muted loop class="banner-video">
-            <source src="imagenes/banner4.mp4" type="video/mp4">
-        </video>
-        <div class="banner-text">
-            <h1>Contáctanos</h1>
-            <p>Estamos aquí para ayudarte</p>
-        </div>
-    </section>
+    </header>
 
     <!-- Información de contacto-->
 
     <div class="container-company">
-        <div>
-            <h2 class="info-title">Contáctanos</h2>
-        </div>
-        <div>
-            <p class="info-subtitle"> Síguenos en nuestras redes sociales o ponte en contacto con nosotros y te
-                atenderemos enseguida.
-            </p>
-        </div>
+        <p class="info-subtitle"> Síguenos en nuestras redes sociales o ponte en contacto con nosotros y te
+            atenderemos enseguida.
+        </p>
+
     </div>
 
     <!-- Columna izquierda: Formulario -->
@@ -65,8 +60,8 @@
             <h2>Consultanos sin compromiso</h2>
             <form id="contactForm">
                 <div class="form-group">
-                    <input type="text" placeholder="Nombre" required>
-                    <input type="text" placeholder="Email" required>
+                    <input type="text" name="name" placeholder="Nombre" required>
+                    <input type="text" name="email" placeholder="Email" required>
                 </div>
                 <div class="form-group">
                     <input type="text" placeholder="Número de teléfono" name="phone" required>
@@ -97,14 +92,47 @@
                     de España</a>
             </div>
             <!-- Globo e información -->
-            <div>
-                <img src="imagenes/globoMundo.gif" alt="Globo Mundo" class="globe-container">-->  
-                <img class="views-counter" alt="Hits" src="https://hits.sh/papeleosenlasredes.com.svg?style=flat-square&label=Visitas&labelColor=343c44&" />
+            <div class="globe">
+                <img src="imagenes/globoMundo.gif" alt="Globo Mundo" class="globe-container">
+                <img class="views-counter" alt="Hits"
+                    src="https://hits.sh/papeleosenlasredes.com.svg?style=flat-square&label=Visitas&labelColor=343c44&" />
             </div>
         </div>
     </div>
     </div>
-
-</body>
-
-</html>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section-enlaces">
+                <h4>Enlaces Útiles</h4>
+                <a href="#">Inicio</a>
+                <a href="#">¿Quiénes Somos?</a>
+                <a href="#">Servicios</a>
+                <a href="#">Contáctanos</a>
+            </div>
+            <div class="footer-section-datacompany">
+                <h4>Contacto</h4>
+                <p class="inf-company"> <b>Lugar: </b><a href="https://maps.app.goo.gl/kGyket6hLUJgbz4z9"> Castellón de la Plana. España</a></p>
+                <p class="inf-company"><b>Teléfono: </b> <a href="tel: +34 642 64 35 99"> +34 642 64 35 99</a></p>
+                <p class="inf-company"><b>Email:  </b> <a href="mailto: admin@papeleosenlasredes.com"> admin@papeleosenlasredes.com</a></p>
+            </div>
+            <div class="footer-section-social">
+                <h4>Síguenos</h4>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-section-copy">
+                <p>&copy; 2025 Todos los derechos reservados.</p>
+            </div>
+        </div>
+    
+    </footer>
+    
+    </body>
+    
+    </html>
+    
+    
+    
+    
+        
