@@ -76,6 +76,32 @@ document.getElementById('contactForm').addEventListener('submit', function (even
             alert('Error al enviar el correo: ' + JSON.stringify(error));
         });
 });
+// Botón whatsapp
+
+function togglePopup() {
+    const popup = document.getElementById('whatsappPopup');
+    popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
+}
+
+function sendMessage() {
+    const input = document.getElementById('messageInput');
+    const chatArea = document.getElementById('chatArea');
+
+    if (input.value.trim() !== '') {
+        const message = document.createElement('div');
+        message.textContent = input.value;
+        message.style.margin = '5px 0';
+        message.style.padding = '8px';
+        message.style.backgroundColor = '#25D366';
+        message.style.color = 'white';
+        message.style.borderRadius = '5px';
+        message.style.textAlign = 'right';
+        chatArea.appendChild(message);
+        chatArea.scrollTop = chatArea.scrollHeight;
+        input.value = '';
+    }
+}
+
 
 
 
