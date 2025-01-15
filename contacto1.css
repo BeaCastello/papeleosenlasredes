@@ -43,12 +43,12 @@ h3 {
 
 .banner-text h1 {
     font-size: 5rem;
-    color: rgb(236, 131, 12);
+    color: rgb(252, 251, 250);
 }
 
 .banner-text p {
     font-size: 1.5rem;
-    color: rgb(236, 131, 12);
+    color:rgb(236, 131, 12);
     margin-top: -15px;
 }
 
@@ -172,7 +172,7 @@ h3 {
 
     .banner-text h1 {
         font-size: 3.4rem;
-        color: rgb(236, 131, 12);
+        color: rgb(252, 251, 250);
     }
 }
 
