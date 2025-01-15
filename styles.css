@@ -491,7 +491,7 @@ ul li {
     margin-top: 15px;
     font-weight: bold;
     margin-bottom: 15px;
-    }
+}
 
 @media (max-width: 768px) {
     .container {
@@ -499,7 +499,7 @@ ul li {
         margin-top: 40px;
         gap: 20px;
     }
-    
+
     .vertical-line {
         width: 2px;
         height: 100%;
@@ -518,7 +518,7 @@ ul li {
 
     .left-section {
         flex: 1;
-           }
+    }
 
     .right-section {
         margin-right: 40px;
@@ -536,26 +536,29 @@ ul li {
         display: flex;
         gap: 10px;
     }
+
     .main-image {
         width: 210px;
         display: flex;
         justify-content: center;
     }
+
     .vertical-line {
-       margin: 2px;
+        margin: 2px;
     }
 
     .image-card img {
         width: 120px;
         height: 80px;
     }
+
     .roots-title {
         margin-bottom: 20px;
         font-size: 16px;
         line-height: 27px;
         text-align: justify;
     }
-    
+
     .roots-title1 {
         margin-top: 20px;
         margin-bottom: 10px;
@@ -563,21 +566,24 @@ ul li {
         line-height: 27px;
         text-align: justify;
     }
+
     .roots-description {
         font-size: 14px;
         width: 100%;
     }
+
     .image-card p {
         font-size: 14px;
     }
+
     .left-section {
         flex: 1;
-        margin-left:7px;
+        margin-left: 7px;
     }
-    
+
 
 }
-    
+
 /* Texto animado */
 .animated-text-container {
     position: relative;
@@ -595,13 +601,9 @@ ul li {
 }
 
 .animated-text {
-    position: relative;
-    display: flex;
-    justify-self: center;
+    margin-left: 25em;
     color: black;
     font-size: 22px;
-    text-align: center;
-    align-items: center;
     animation: scrollText 10s linear infinite;
     font-weight: 400;
 }
