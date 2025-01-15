@@ -1023,7 +1023,12 @@ h4 {
 .footer-section-social a {
     display: inline-block;
     margin: 0 5px;
-    font-size: 20px;
+    font-size: 22px;
+}
+
+.footer-container a:hover{
+    color: #007BFF;
+    transition: all 1s;
 }
 
 /* Responsivo: pantallas pequeñas */
@@ -1040,14 +1045,32 @@ h4 {
         flex: 1 1 100%;
         margin-bottom: 20px;
     }
+    .footer-container a:hover{
+        color: #007BFF;
+        transition: all 1s;
+    }
+    .footer-container a{
+        font-size: 17px;
+        margin-left: 10px;
+    }
+    
 }
 
 @media (max-width: 480px) {
     .footer-container a {
-        font-size: 12px;
+        font-size: 14px;
+        margin-left: 5px;
+    }
+    .footer-container a:hover{
+        color: #007BFF;
     }
 
     .footer-section-copy {
         font-size: 10px;
+    }
+    .footer-section-social a {
+        display: inline-block;
+        margin: 0 5px;
+        font-size: 22px;
     }
 }
