@@ -12,19 +12,80 @@ const fechaTexto = `${diaSemana.charAt(0).toUpperCase() + diaSemana.slice(1)}, $
 document.getElementById('fecha-actual').textContent = fechaTexto;
 
 
-// Slider
-const container = document.querySelector('.slider-container');
+const feeds = [
+  {
+    nombre: "ABC",
+    imagen: "imagenes/Periódico_ABC.jpg",
+    rss: "https://www.abc.es/rss/feeds/abc_Espana.xml"
+  },
+  {
+    nombre: "El Mundo",
+    imagen: "imagenes/Periódico_El Mundo.png",
+    rss: "https://e00-elmundo.uecdn.es/elmundo/rss/espana.xml"
+  },
+  {
+    nombre: "El País",
+    imagen: "imagenes/Periódico_El Pais.jpg",
+    rss: "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/internacional/portada"
+  },
+  {
+    nombre: "El Periódico",
+    imagen: "imagenes/Periódico_El Periódico.png",
+    rss: ""
+  },
+  {
+    nombre: "La Razón",
+    imagen: "imagenes/Periódico_La Razón.png",
+    rss: "https://www.larazon.es/rss/espana.xml"
+  },
+  {
+    nombre: "La Vanguardia",
+    imagen: "imagenes/Periódico_La Vanguardia.png",
+    rss: ""
+  }
+];
+
+const slidesContainer = document.getElementById("slidesContainer");
+
+async function fetchNews() {
+  slidesContainer.innerHTML = "";
+  for (let feed of feeds) {
+    try {
+      const res = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feed.rss)}`);
+      const data = await res.json();
+      const noticia = data.items[0];
+
+      const slide = document.createElement("div");
+      slide.className = "slide";
+      slide.innerHTML = `
+        <img src="${feed.imagen}" alt="${feed.nombre}" style="margin-left: 50px;">
+        <div class="info">
+          <h3>${feed.nombre}</h3>
+          <p><strong>Titular:</strong> ${noticia.title}</p>
+          <a href="${noticia.link}" target="_blank">Ir a ${feed.nombre} →</a>
+        </div>`;
+      slidesContainer.appendChild(slide);
+    } catch (err) {
+      console.error("Error con el feed de " + feed.nombre, err);
+    }
+  }
+}
+
+// Hace un llamado Inicial
+fetchNews();
+
+//  Para que se actualice cada 24 horas
+setInterval(fetchNews, 86400000); 
+
+
 const prevBtn = document.querySelector('.nav.prev');
 const nextBtn = document.querySelector('.nav.next');
-const slides = document.querySelectorAll('.slide');
+let index = 0;
 const slidesToShow = 3;
 
-let index = 0;
-const totalGroups = Math.ceil(slides.length / slidesToShow);
-
 function updateSlider() {
-  const slideWidth = slides[0].offsetWidth;
-  container.style.transform = `translateX(-${index * slideWidth * slidesToShow}px)`;
+  const slideWidth = document.querySelector('.slide').offsetWidth;
+  slidesContainer.style.transform = `translateX(-${index * slideWidth * slidesToShow}px)`;
 }
 
 prevBtn.addEventListener('click', () => {
@@ -35,7 +96,8 @@ prevBtn.addEventListener('click', () => {
 });
 
 nextBtn.addEventListener('click', () => {
-  if (index < totalGroups - 1) {
+  const maxIndex = Math.ceil(slidesContainer.children.length / slidesToShow) - 1;
+  if (index < maxIndex) {
     index++;
     updateSlider();
   }
