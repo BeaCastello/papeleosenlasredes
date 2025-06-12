@@ -31,7 +31,7 @@ const feeds = [
   {
     nombre: "El Periódico",
     imagen: "imagenes/Periódico_El Periódico.png",
-    rss: ""
+    rss: "https://www.elperiodico.com/es/cds/rss/?id=board.xml"
   },
   {
     nombre: "La Razón",
@@ -41,7 +41,7 @@ const feeds = [
   {
     nombre: "La Vanguardia",
     imagen: "imagenes/Periódico_La Vanguardia.png",
-    rss: ""
+    rss: "https://www.lavanguardia.com/rss/home.xml"
   }
 ];
 
