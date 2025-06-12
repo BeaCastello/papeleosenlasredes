@@ -16,12 +16,12 @@ h1 {
   margin-bottom: 0px;
 }
 
-.text-reforms{
-width: 25rem;
-line-height: 25px;
+.text-reforms {
+  width: 25rem;
+  line-height: 25px;
 }
 
-.labor-reforms{
+.labor-reforms {
   display: flex;
   margin-left: 23px;
 }
@@ -38,7 +38,7 @@ line-height: 25px;
   padding: 20px;
   gap: 35px;
   justify-content: center;
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 
 .news-container {
@@ -54,7 +54,7 @@ line-height: 25px;
   font-weight: bold;
   font-size: 1.5rem;
   margin-bottom: 10px;
-   
+
 }
 
 .news-subtitle {
@@ -67,7 +67,7 @@ line-height: 25px;
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 20px;
- 
+
 }
 
 @media (max-width: 768px) {
@@ -85,12 +85,12 @@ line-height: 25px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0; 
+  gap: 0;
   margin: 40px 0;
 }
 
 .blog-column {
-  flex: 1;  
+  flex: 1;
   margin-top: 20px;
   margin-left: 23px;
   box-sizing: border-box;
@@ -132,79 +132,209 @@ line-height: 25px;
   .blog-container {
     flex-direction: column;
   }
+
   .divider {
     display: none;
   }
+
   .blog-column {
     max-width: 100%;
     border-bottom: 1px solid #ccc;
   }
 }
-.more-news{
+
+.more-news {
   display: flex;
 }
 
 
-
-
-.press-news {
-  padding: 30px;
-  background: #f9f9f9;
+/* Estilo de  noticias */
+.news-slider {
+  display: flex;
+  background-color: #f9f9f9;
+  padding-bottom: 30px;
   border-top: 3px solid #ccc;
-  display: flex;
-  margin-top: 20px;
-  gap: 25px;
+  margin-top: 30px;
+  justify-content: space-between;
 }
 
-.press-news h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+.left-side {
+  font-size: 1.3rem;
   text-align: center;
+  margin-left: 4px;
 }
 
-.media {
+.left-side h2 {
+  width: 245px;
+  font-size: 30px;
+  margin-top: 80px;
+}
+
+.right-side {
+  display: flex;  
+}
+
+.slider {
+  position: relative;
+  width: 67.5em;
+  margin: 50px auto;
+  overflow: hidden;
+ 
+}
+
+.slider-container {
   display: flex;
-  align-items: center;
-  border-bottom: 1px solid #ddd;
-  padding: 15px 0;
+  transition: transform 0.4s ease;
 }
 
-.media img {
-  width: 120px;
-  height: auto;
-  margin-right: 20px;
+.slide {
+  flex: 0 0 33.3333%;
+  box-sizing: border-box;
+  display: flex;
 }
 
-.info {
-  flex: 1;
+.slide img {
+  width: 150px;
+  border-radius: 8px;
+  display: block;
+ 
 }
 
-.info h3 {
-  margin: 0;
-  font-size: 1.2rem;
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
 }
 
-.info p {
-  margin: 5px 0;
+.nav.prev {
+  left: 0;
 }
 
-.info a {
-  color: #007bff;
+.nav.next {
+ right: 0;
+}
+
+.info{
+  margin-left: 10px;
+  width: 140px;
+}
+
+
+
+
+/* Estilos footer */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 10px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-container a {
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
+  font-size: 14px;
+
 }
 
-.info a:hover {
+h4 {
+  margin-bottom: 10px;
+}
+
+.inf-company {
+  line-height: 30px;
+}
+
+.footer-container a:hover {
   text-decoration: underline;
 }
 
+.footer-section-enlaces,
+.footer-section-datacompany,
+.footer-section-social {
+  flex: 1 1 200px;
+  min-width: 150px;
+}
+
+.footer-section-copy {
+  flex: 1 1 100%;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* Estilo para redes sociales */
+.footer-section-social a {
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 22px;
+}
+
+.footer-container a:hover {
+  color: #007BFF;
+  transition: all 1s;
+}
+
+/* Responsivo: pantallas pequeñas */
 @media (max-width: 768px) {
-  .media {
+  .footer-container {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
   }
 
-  .media img {
-    margin-bottom: 10px;
+  .footer-section-enlaces,
+  .footer-section-datacompany,
+  .footer-section-social {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-container a:hover {
+    color: #007BFF;
+    transition: all 1s;
+  }
+
+  .footer-container a {
+    font-size: 17px;
+    margin-left: 10px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .footer-container a {
+    font-size: 14px;
+    margin-left: 5px;
+  }
+
+  .footer-container a:hover {
+    color: #007BFF;
+  }
+
+  .footer-section-copy {
+    font-size: 10px;
+  }
+
+  .footer-section-social a {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 22px;
   }
 }
