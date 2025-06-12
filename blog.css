@@ -176,7 +176,7 @@ h1 {
 
 .slider {
   position: relative;
-  width: 68.5em;
+  width: 68.2em;
   margin: 50px auto;
   overflow: hidden;
   justify-content: center;
@@ -189,18 +189,17 @@ h1 {
 }
 
 .slide {
-  flex: 0 0 30%;
+  flex: 0 0 20%;
   box-sizing: border-box;
-  display: flex;
+  display: flex;  
 }
 
 .slide img {
   width: 150px;
   height: 220px;
   border-radius: 8px;
-  display: block;
- 
- 
+  display: block; 
+  margin-left: 30px;
 }
 
 .nav {
@@ -221,7 +220,7 @@ h1 {
 }
 
 .nav.next {
- right: 0;
+ right: 2px;
 }
 
 .info{
@@ -237,6 +236,9 @@ h1 {
 }
 .info a:hover{
   color:#c7750a
+}
+.info p{
+  margin-bottom: 5px;
 }
 
 
