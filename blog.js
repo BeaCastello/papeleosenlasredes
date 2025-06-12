@@ -42,7 +42,8 @@ const feeds = [
     nombre: "La Vanguardia",
     imagen: "imagenes/Periódico_La Vanguardia.png",
     rss: "https://www.lavanguardia.com/rss/home.xml"
-  }
+  },
+ 
 ];
 
 const slidesContainer = document.getElementById("slidesContainer");
