@@ -12,25 +12,21 @@ header {
   font-family: 'Times New Roman', serif;
 }
 
-h1 {
+.h1_header{
+  padding-top: 15px;
   margin-bottom: 0px;
+  font-size: 50px;
+  padding: 0;
+}
+.locality{
+  text-align: center;
+  margin-bottom: 15px;
+}
+.header_img{
+width: 59em;
+margin-bottom: 0px;
 }
 
-.text-reforms {
-  width: 25rem;
-  line-height: 25px;
-}
-
-.labor-reforms {
-  display: flex;
-  margin-left: 23px;
-}
-
-.divider {
-  width: 2px;
-  background-color: rgb(196, 194, 194);
-  margin-left: 20px;
-}
 
 .news {
   display: flex;
@@ -46,15 +42,22 @@ h1 {
   border-top: 4px solid black;
   padding: 10px;
   max-width: 400px;
-  margin-top: 12px;
-}
+  }
 
 
 .news-title {
   font-weight: bold;
   font-size: 1.5rem;
   margin-bottom: 10px;
+  padding: 0px;
+  margin-top: -10px;
 
+}
+.news-title1{
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  padding: 0px;
 }
 
 .news-subtitle {
@@ -63,11 +66,93 @@ h1 {
   margin-bottom: 10px;
 }
 
+.news-body p{
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
 .news-body {
   font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 20px;
+}
 
+@media (max-width: 768px){
+.header_img{
+width: 46em;
+margin-bottom: 0px;
+}
+}
+
+/* Nuevas Reformas */
+.title_reforms {
+  text-align: center;
+  margin-left: 23px;
+  margin-bottom: 40px;
+  padding: 0px;
+}
+
+.labor-reforms {
+  display: flex;
+  margin-left: 23px;
+}
+.reformsImg{
+  width: 390px; 
+  margin-left: 23px
+}
+
+.text-reforms {
+  width: 25rem;
+  line-height: 25px;
+}
+
+.subtitle_reduction {
+  margin-left: 23px;
+  margin-top: 0px;
+  margin-left: 23px;
+}
+
+.paragraph_reforms {
+  margin-top: 0px;
+  margin-left: 23px;
+  text-align: justify;
+  margin-bottom: 0px;
+}
+.divider {
+  width: 2px;
+  background-color: rgb(196, 194, 194);
+  margin-left: 20px;
+}
+.enlace_reforms{
+  margin-left: 23px;
+}
+
+@media (max-width: 768px){
+.labor-reforms{
+  flex-direction: column;
+  align-items: center
+}
+.reformsImg {
+    width: 490px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+.text-reforms {
+    width: 29em;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+}
+
+/* Estilo Regularización */
+.regulation_news {
+  padding: 0px 23px 0px 20px;
+  line-height: 25px;
+  margin-left: 30px;
+  margin-right: 20px;
+  }
+
+.enlace_news {
+  margin-left: 53px;
 }
 
 /* Estilo Descenso */
@@ -113,10 +198,16 @@ h1 {
   width: 17.9em
 }
 
-@media (max-width: 768px) {  
+.regularizaciónImg {
+  display: flex;
+  justify-self: center;
+  margin-top: 25px;
+}
+
+@media (max-width: 768px) {
   .blog-image {
     width: 28.6em;
-    height: 19em;
+    height: 15em;
     display: flex;
     margin-left: 0px;
     margin-top: 80px;
@@ -132,11 +223,23 @@ h1 {
     width: 220px;
     height: 170px;
   }
+
   .descent_news {
     width: 13.7em;
   }
+
   .blog-column {
-    gap:27px;
+    gap: 27px;
+  }
+
+  .regularizaciónImg {
+    width: 46em;
+  }
+
+  .regulation_news {
+    padding: 0px 23px 0px 23px;
+    line-height: 25px;
+    text-align: justify;
   }
 }
 
@@ -148,7 +251,6 @@ h1 {
   border-top: 3px solid #ccc;
   margin-top: 30px;
   justify-content: space-between;
-
 }
 
 .left-side {
@@ -250,11 +352,16 @@ hr {
   flex-direction: row;
   margin-bottom: 20px;
 }
-@media (max-width: 768px) {  
-.slider {
+
+@media (max-width: 768px) {
+  .slider {
     width: 30em;
   }
+  .left-side{
+    font-size: 20px;
   }
+}
+
 /* Estilos footer */
 
 footer {
