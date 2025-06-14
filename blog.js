@@ -61,8 +61,8 @@ async function fetchNews() {
       slide.innerHTML = `
         <img src="${feed.imagen}" alt="${feed.nombre}">
         <div class="info">
-          <h3>${feed.nombre}</h3>
-          <p><strong>Titular:</strong> ${noticia.title}</p>
+          <h3 style="margin-top: 2px; margin-bottom: 1px;">${feed.nombre}</h3>
+          <p><strong>Titular:</strong> ${noticia.title} </p>
           <a href="${noticia.link}" target="_blank">Ir a ${feed.nombre} →</a>
         </div>`;
       slidesContainer.appendChild(slide);
