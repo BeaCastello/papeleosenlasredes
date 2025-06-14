@@ -59,7 +59,7 @@ async function fetchNews() {
       const slide = document.createElement("div");
       slide.className = "slide";
       slide.innerHTML = `
-        <img src="${feed.imagen}" alt="${feed.nombre}" style="margin-left: 50px;">
+        <img src="${feed.imagen}" alt="${feed.nombre}">
         <div class="info">
           <h3>${feed.nombre}</h3>
           <p><strong>Titular:</strong> ${noticia.title}</p>
