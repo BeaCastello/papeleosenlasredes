@@ -187,7 +187,9 @@ header {
 
   .title_reforms {
     font-size: 25px;
-    width: 270px;
+    width: 300px;
+    line-height: 40px;
+    margin-bottom: 25px;
   }
 
   .news-container {
@@ -196,10 +198,27 @@ header {
 
   .news-body {
     width: 270px;
-
   }
 
+  .text-reforms {
+    width: 21em;
+    margin-bottom: 0px;
+  }
 
+  .reformsImg {
+    width: 335px;
+  }
+
+  .reforms-news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .labor-reforms {
+    margin-left: 0px;
+  }
 
 }
 
@@ -213,6 +232,59 @@ header {
 
 .enlace_news {
   margin-left: 53px;
+}
+
+.regularizaciónImg {
+  display: flex;
+  justify-self: center;
+  margin-top: 25px;
+}
+
+@media (max-width: 768px) {
+  .regulation_news {
+    padding: 0px 23px 0px 23px;
+    line-height: 25px;
+    text-align: justify;
+  }
+
+  .regularizaciónImg {
+    width: 46em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .regulation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .regulation_news {
+    padding: 0px;
+    margin: 0px;
+    width: 21em;
+  }
+
+  .regulation {
+    font-size: 25px;
+    width: 270px;
+  }
+
+  .regulation_news {
+    margin-bottom: 15px;
+    line-height: 25px;
+    text-align: justify;
+    margin-top: 10px;
+  }
+
+  .enlace_news {
+    margin-left: 0px;
+  }
+
+  .regularizaciónImg {
+    width: 21em;
+  }
+
 }
 
 /* Estilo Descenso */
@@ -258,12 +330,6 @@ h1 {
   width: 17.9em
 }
 
-.regularizaciónImg {
-  display: flex;
-  justify-self: center;
-  margin-top: 25px;
-}
-
 @media (max-width: 768px) {
   .blog-image {
     width: 28.6em;
@@ -292,15 +358,6 @@ h1 {
     gap: 27px;
   }
 
-  .regularizaciónImg {
-    width: 46em;
-  }
-
-  .regulation_news {
-    padding: 0px 23px 0px 23px;
-    line-height: 25px;
-    text-align: justify;
-  }
 }
 
 @media screen and (max-width: 480px) {
@@ -495,7 +552,8 @@ hr {
     margin-bottom: 30px;
     margin-right: 0px;
   }
-  .descent-container{
+
+  .descent-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -505,28 +563,6 @@ hr {
   .descent-text {
     font-size: 25px;
     width: 285px;
-  }
-
-  .regularizaciónImg {
-    width: 12em;
-  }
-
-  .regulation_news {
-    padding: 0px;
-    width: 240px;
-  }
-
-  .regulation {
-    font-size: 25px;
-    width: 270px;
-  }
-
-  .text-reforms {
-    width: 18em;
-  }
-
-  .reformsImg {
-    width: 170px;
   }
 
   .descent_news {
