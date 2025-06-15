@@ -12,19 +12,21 @@ header {
   font-family: 'Times New Roman', serif;
 }
 
-.h1_header{
+.h1_header {
   padding-top: 15px;
   margin-bottom: 0px;
   font-size: 50px;
   padding: 0;
 }
-.locality{
+
+.locality {
   text-align: center;
   margin-bottom: 15px;
 }
-.header_img{
-width: 59em;
-margin-bottom: 0px;
+
+.header_img {
+  width: 59em;
+  margin-bottom: 0px;
 }
 
 
@@ -42,7 +44,7 @@ margin-bottom: 0px;
   border-top: 4px solid black;
   padding: 10px;
   max-width: 400px;
-  }
+}
 
 
 .news-title {
@@ -53,7 +55,8 @@ margin-bottom: 0px;
   margin-top: -10px;
 
 }
-.news-title1{
+
+.news-title1 {
   font-weight: bold;
   font-size: 1.5rem;
   margin-bottom: 10px;
@@ -66,21 +69,22 @@ margin-bottom: 0px;
   margin-bottom: 10px;
 }
 
-.news-body p{
+.news-body p {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 30px;
 }
+
 .news-body {
   font-size: 1rem;
   line-height: 1.6;
 }
 
-@media (max-width: 768px){
-.header_img{
-width: 46em;
-margin-bottom: 0px;
-}
+@media (max-width: 768px) {
+  .header_img {
+    width: 46em;
+    margin-bottom: 0px;
+  }
 }
 
 /* Nuevas Reformas */
@@ -95,8 +99,9 @@ margin-bottom: 0px;
   display: flex;
   margin-left: 23px;
 }
-.reformsImg{
-  width: 390px; 
+
+.reformsImg {
+  width: 390px;
   margin-left: 23px
 }
 
@@ -106,7 +111,6 @@ margin-bottom: 0px;
 }
 
 .subtitle_reduction {
-  margin-left: 23px;
   margin-top: 0px;
   margin-left: 23px;
 }
@@ -117,30 +121,48 @@ margin-bottom: 0px;
   text-align: justify;
   margin-bottom: 0px;
 }
+
 .divider {
   width: 2px;
   background-color: rgb(196, 194, 194);
   margin-left: 20px;
 }
-.enlace_reforms{
+
+.enlace_reforms {
   margin-left: 23px;
 }
 
-@media (max-width: 768px){
-.labor-reforms{
-  flex-direction: column;
-  align-items: center
+@media (max-width: 768px) {
+  .labor-reforms {
+    flex-direction: column;
+    align-items: center
+  }
+
+.subtitle_reduction {
+  margin-top: 0px;
+  margin-left: 0px;
 }
-.reformsImg {
+
+.paragraph_reforms{
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
+
+.enlace_reforms {
+  margin-left: 0px;
+}
+
+  .reformsImg {
     width: 490px;
     margin-left: 0px;
     margin-bottom: 20px;
-}
-.text-reforms {
-    width: 29em;
+  }
+
+  .text-reforms {
+    width: 30.5em;
     line-height: 25px;
     margin-bottom: 20px;
-}
+  }
 }
 
 /* Estilo Regularización */
@@ -149,7 +171,7 @@ margin-bottom: 0px;
   line-height: 25px;
   margin-left: 30px;
   margin-right: 20px;
-  }
+}
 
 .enlace_news {
   margin-left: 53px;
@@ -256,7 +278,6 @@ h1 {
 .left-side {
   font-size: 1.3rem;
   text-align: center;
-  margin-left: 4px;
 }
 
 .left-side h2 {
@@ -264,8 +285,9 @@ h1 {
   font-size: 30px;
   margin-top: 80px;
 }
-.left-side h3{
- margin-top: 2px;
+
+.left-side h3 {
+  margin-top: 2px;
 }
 
 .right-side {
@@ -287,7 +309,6 @@ h1 {
 }
 
 .slide {
- 
   box-sizing: border-box;
   display: flex;
 }
@@ -299,10 +320,6 @@ h1 {
   display: block;
   margin-left: 47px;
 }
-
-
-
-
 
 .nav {
   position: absolute;
@@ -319,7 +336,7 @@ h1 {
 
 .nav.prev {
   left: 0;
-  
+
 }
 
 .nav.next {
@@ -345,17 +362,17 @@ h1 {
 
 .info p {
   margin-bottom: 5px;
+  margin-top: 8px;
 }
 
 hr {
-
   width: 250px;
   display: flex;
   flex-direction: row;
 }
 
 .separator {
-  margin-top: -45px;
+  margin-top: -40px;
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
@@ -363,41 +380,47 @@ hr {
 
 @media (max-width: 768px) {
   .slider {
-    width: 67em; 
-    margin: 0px; 
+    width: 67em;
+    margin: 0px;
   }
-  .left-side{
+
+  .left-side {
     font-size: 20px;
-    margin-left: 0px;
     display: flex;
     justify-content: center;
   }
+
   .left-side h2 {
     width: 50em;
     font-size: 25px;
     margin-top: 30px;
-    margin-left: 30px;
     margin-bottom: 30px;
-}
-.right-side{
-  width: 651px;
-  align-self: center;
-  
-}
-.slide img{
-margin-left: 17px;
-}
-.news-slider{
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-}
-.slider-container{
-  margin: 0px;
-    padding: 0px;
-}
-}
+  }
 
+  .right-side {
+    /*width: 651px;*/
+    width: 739px;
+    align-self: center;
+  }
+
+  .news-slider {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slider-container {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .nav{
+    padding: 5px;
+  }
+  .separator {
+  margin-top: 0px;
+  } 
+ }
 /* Estilos footer */
 
 footer {
