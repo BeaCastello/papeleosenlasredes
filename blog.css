@@ -87,6 +87,31 @@ header {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .news {
+    padding: 10px;
+  }
+
+  .news-title1 {
+    width: 350px;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  .news-subtitle {
+    width: 335px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 25px;
+  }
+
+
+
+
+
+
+}
+
 /* Nuevas Reformas */
 .title_reforms {
   text-align: center;
@@ -150,6 +175,7 @@ header {
 
   .enlace_reforms {
     margin-left: 0px;
+
   }
 
   .reformsImg {
@@ -167,22 +193,23 @@ header {
 
 @media screen and (max-width: 480px) {
   .header_img {
-    width: 12em;
+    width: 22em;
     margin-bottom: 0px;
 
   }
 
   .news-body p {
-    width: 270px;
-  }
-
-  .news-subtitle {
-    width: 270px;
+    width: 335px;
   }
 
   .news-title {
     font-size: 25px;
-    width: 270px;
+    margin-bottom: 20px;
+    padding: 0px;
+    margin-top: 0px;
+    width: 335px;
+    line-height: 35px;
+    margin-top: -20px;
   }
 
   .title_reforms {
@@ -197,7 +224,8 @@ header {
   }
 
   .news-body {
-    width: 270px;
+    width: 335px;
+    text-align: justify;
   }
 
   .text-reforms {
@@ -207,6 +235,7 @@ header {
 
   .reformsImg {
     width: 335px;
+    margin-top: 20px;
   }
 
   .reforms-news {
@@ -219,6 +248,8 @@ header {
   .labor-reforms {
     margin-left: 0px;
   }
+
+
 
 }
 
@@ -268,6 +299,9 @@ header {
   .regulation {
     font-size: 25px;
     width: 270px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 0;
   }
 
   .regulation_news {
@@ -526,12 +560,14 @@ hr {
 
 @media screen and (max-width: 480px) {
   .left-side h2 {
-    width: 10em;
+    width: 17em;
     text-align: center;
+    line-height: 35px;
   }
 
   .right-side {
-    width: 280px;
+    width: 24em;
+    margin-top: 20px;
   }
 
   .slide {
@@ -572,6 +608,14 @@ hr {
     display: flex;
     flex-direction: column;
     margin-left: 28px;
+  }
+
+  .nav.next {
+    right: 14px;
+  }
+
+  .nav.prev {
+    left: 14px;
   }
 }
 
