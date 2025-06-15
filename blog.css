@@ -138,19 +138,19 @@ header {
     align-items: center
   }
 
-.subtitle_reduction {
-  margin-top: 0px;
-  margin-left: 0px;
-}
+  .subtitle_reduction {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
 
-.paragraph_reforms{
-  margin-left: 0px;
-  margin-bottom: 10px;
-}
+  .paragraph_reforms {
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
 
-.enlace_reforms {
-  margin-left: 0px;
-}
+  .enlace_reforms {
+    margin-left: 0px;
+  }
 
   .reformsImg {
     width: 490px;
@@ -414,13 +414,52 @@ hr {
     padding: 0px;
   }
 
-  .nav{
+  .nav {
     padding: 5px;
   }
+
   .separator {
-  margin-top: 0px;
-  } 
- }
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .left-side h2 {
+    width: 10em;
+    text-align: center;
+  }
+
+  .right-side {
+    width: 280px;
+  }
+
+  .slide {
+    padding: 0;
+    margin-left: 0px;
+  }
+
+  .blog-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog-image1 {
+    margin-bottom: 30px;
+  }
+
+  .blog-image {
+    width: 15.5em;
+    height: 10em;
+  }
+.descent-text{
+font-size: 27px;
+    width: 285px;
+}
+
+}
+
+
+
 /* Estilos footer */
 
 footer {
@@ -469,4 +508,35 @@ h4 {
   flex: 1 1 100%;
   text-align: center;
   font-size: 12px;
+}
+
+@media screen and (max-width: 480px) {
+  h4 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  .footer-section-enlaces {
+    display: flex;
+    flex-direction: column;
+    line-height: 23px;
+    text-align: center;
+  }
+
+  .inf-company {
+    line-height: 15px;
+    text-align: center;
+  }
+
+  .footer-section-enlaces,
+  .footer-section-datacompany,
+  .footer-section-social {
+    text-align: center;
+  }
+
+  .footer-p {
+    text-align: center;
+  }
 }
