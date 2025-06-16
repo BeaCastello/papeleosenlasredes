@@ -533,7 +533,6 @@ hr {
   }
 
   .right-side {
-    /*width: 651px;*/
     width: 739px;
     align-self: center;
   }
@@ -556,6 +555,10 @@ hr {
   .separator {
     margin-top: 0px;
   }
+  .slider-container {
+  display: flex;
+  transition: transform 0.9s ease;
+}
 }
 
 @media screen and (max-width: 480px) {
@@ -617,6 +620,10 @@ hr {
   .nav.prev {
     left: 14px;
   }
+  .slider-container {
+  display: flex;
+  transition: transform 1s ease;
+}
 }
 
 
