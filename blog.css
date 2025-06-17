@@ -85,6 +85,9 @@ header {
   .header_img {
     width: 46em;
     margin-bottom: 0px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
   }
 }
 
@@ -277,6 +280,9 @@ header {
     padding: 0px 23px 0px 23px;
     line-height: 25px;
     text-align: justify;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
   }
 
   .regularizaciónImg {
