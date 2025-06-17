@@ -86,7 +86,8 @@ const slidesToShow = 3;
 
 function updateSlider() {
   const slideWidth = document.querySelector('.slide').offsetWidth;
-  slidesContainer.style.transform = `translateX(-${index * slideWidth * slidesToShow}px)`;
+  var finalCount = document.body.clientWidth < 768 ? (document.body.clientWidth < 480 ? 1 : 2) : slidesToShow;
+  slidesContainer.style.transform = `translateX(-${index * slideWidth * finalCount}px)`;
 }
 
 prevBtn.addEventListener('click', () => {
@@ -97,7 +98,8 @@ prevBtn.addEventListener('click', () => {
 });
 
 nextBtn.addEventListener('click', () => {
-  const maxIndex = Math.ceil(slidesContainer.children.length / slidesToShow) - 1;
+  var finalCount = document.body.clientWidth < 768 ? (document.body.clientWidth < 480 ? 1 : 2) : slidesToShow;
+  const maxIndex = Math.ceil(slidesContainer.children.length / finalCount) - 1;
   if (index < maxIndex) {
     index++;
     updateSlider();
@@ -105,3 +107,5 @@ nextBtn.addEventListener('click', () => {
 });
 
 window.addEventListener('resize', updateSlider);
+
+

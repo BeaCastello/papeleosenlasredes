@@ -612,6 +612,9 @@ hr {
   .nav.prev {
     left: 14px;
   }
+ .slide img{
+    margin-left: 38.5px;
+  }
 
 }
 
