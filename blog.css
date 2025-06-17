@@ -109,8 +109,7 @@ header {
 
 /* Nuevas Reformas laborales */
 .title_reforms {
-  text-align: center;
-  margin-left: 23px;
+  text-align: center;  
   margin-bottom: 40px;
   padding: 0px;
 }
@@ -119,6 +118,9 @@ header {
   display: flex;
   justify-content: center;
   gap: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  line-height: 1.7em;
 }
 
 .reformsImg {
@@ -133,14 +135,14 @@ header {
 .subtitle_reduction {
   margin-top: 10px;
   text-align: center;
-  width: 20em;
+  font-size: 20px;
 }
 
 .paragraph_reforms {
   margin-top: 0px;
-  width: 24.2em;
+  line-height: 1.6em;
   text-align: justify;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 
@@ -155,13 +157,13 @@ header {
   .subtitle_reduction {
     margin-top: 0px;
     margin-left: 0px;
-    width: 17.7em;
+    
   }
 
   .paragraph_reforms {
     margin-left: 0px;
     margin-bottom: 10px;
-    width: 30em;
+   
   }
 
   .enlace_reforms {
@@ -176,7 +178,7 @@ header {
   }
 
   .text-reforms {
-    width: 30.5em;
+    width: 24em;
     line-height: 25px;
     margin-bottom: 20px;
   }
@@ -219,8 +221,7 @@ header {
 
   .reformsImg {
     width: 335px;
-    margin-top: 20px;
-  }
+     }
 
   .reforms-news {
     display: flex;
@@ -234,8 +235,12 @@ header {
   }
 
   .paragraph_reforms {
-    width: 20.7em;
+    padding: 0px 40px 0px 40px;
   }
+  .subtitle_reduction {
+ padding: 0px 30px;
+  }
+ 
 
 
 
@@ -281,23 +286,15 @@ header {
     align-items: center;
   }
 
-  .regulation_news {
-    padding: 0px;
-    margin: 0px;
-    width: 21em;
-  }
-
-  .regulation {
+   .regulation {
     font-size: 25px;
-    width: 270px;
     text-align: center;
     margin-top: 20px;
     padding: 0;
   }
 
   .regulation_news {
-    margin-bottom: 15px;
-    line-height: 25px;
+   padding: 0px 12px;    
     text-align: justify;
     margin-top: 10px;
   }
@@ -307,7 +304,7 @@ header {
   }
 
   .regularizaciónImg {
-    width: 21em;
+    width: 9em;
   }
 
 }
