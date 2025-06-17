@@ -46,12 +46,13 @@ header {
   max-width: 400px;
   margin-top: 5px;
 }
+
 .news-title {
   font-weight: bold;
   font-size: 2rem;
   margin-bottom: 10px;
   padding: 0px;
-  margin-top: -10px;  
+  margin-top: -10px;
 }
 
 .news-title1 {
@@ -60,7 +61,7 @@ header {
   margin-bottom: 10px;
   padding: 0px;
   text-align: left;
-  margin-top: 10px;  
+  margin-top: 10px;
 }
 
 .news-subtitle {
@@ -86,7 +87,7 @@ header {
     width: 46em;
     margin-bottom: 0px;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: center;
   }
 }
@@ -97,15 +98,12 @@ header {
   }
 
   .news-title1 {
-    width: 350px;
     line-height: 35px;
     text-align: center;
   }
 
   .news-subtitle {
-    width: 335px;
     margin-top: 15px;
-    margin-bottom: 15px;
     line-height: 25px;
   }
 }
@@ -120,12 +118,12 @@ header {
 
 .labor-reforms {
   display: flex;
-  justify-content: center;  
+  justify-content: center;
   gap: 20px;
 }
 
 .reformsImg {
-  width: 390px;  
+  width: 390px;
 }
 
 .text-reforms {
@@ -144,21 +142,21 @@ header {
   width: 24.2em;
   text-align: justify;
   margin-bottom: 10px;
-    }
+}
 
 
 @media (max-width: 768px) {
   .labor-reforms {
     flex-direction: column;
     align-items: center;
-    justify-content: center;  
+    justify-content: center;
     gap: 10px;
-}
- 
+  }
+
   .subtitle_reduction {
     margin-top: 0px;
     margin-left: 0px;
-    width: 26em;
+    width: 17.7em;
   }
 
   .paragraph_reforms {
@@ -192,23 +190,17 @@ header {
 
   }
 
-  .news-body p {
-    width: 335px;
-  }
-
   .news-title {
     font-size: 25px;
     margin-bottom: 20px;
     padding: 0px;
     margin-top: 0px;
-    width: 335px;
     line-height: 35px;
     margin-top: -20px;
   }
 
   .title_reforms {
     font-size: 25px;
-    width: 300px;
     line-height: 40px;
     margin-bottom: 25px;
   }
@@ -218,7 +210,6 @@ header {
   }
 
   .news-body {
-    width: 335px;
     text-align: justify;
   }
 
@@ -243,19 +234,23 @@ header {
     margin-left: 0px;
   }
 
+  .paragraph_reforms {
+    width: 20.7em;
+  }
+
 
 
 }
 
 /* Estilo Regularización */
-.regulation_news {  
+.regulation_news {
   line-height: 25px;
   margin-left: 30px;
   margin-right: 25px;
 }
 
 .enlace_news {
- margin-left: 30px;
+  margin-left: 30px;
 }
 
 .regularizaciónImg {
@@ -307,7 +302,7 @@ header {
   }
 
   .enlace_news {
-  margin-left: 30px;
+    margin-left: 30px;
   }
 
   .regularizaciónImg {
@@ -406,7 +401,7 @@ h1 {
   border-top: 3px solid #ccc;
   margin-top: 30px;
   justify-content: space-between;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .left-side {
@@ -551,10 +546,11 @@ hr {
   .separator {
     margin-top: 0px;
   }
+
   .slider-container {
-  display: flex;
-  transition: transform 0.4s ease;
-}
+    display: flex;
+    transition: transform 0.4s ease;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -616,7 +612,7 @@ hr {
   .nav.prev {
     left: 14px;
   }
-  
+
 }
 
 
