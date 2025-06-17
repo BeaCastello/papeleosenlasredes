@@ -60,8 +60,7 @@ header {
   margin-bottom: 10px;
   padding: 0px;
   text-align: left;
-  margin-top: 10px;
-  
+  margin-top: 10px;  
 }
 
 .news-subtitle {
@@ -109,15 +108,9 @@ header {
     margin-bottom: 15px;
     line-height: 25px;
   }
-
-
-
-
-
-
 }
 
-/* Nuevas Reformas */
+/* Nuevas Reformas laborales */
 .title_reforms {
   text-align: center;
   margin-left: 23px;
@@ -127,7 +120,7 @@ header {
 
 .labor-reforms {
   display: flex;
-  margin-left: 23px;
+  justify-content: center;  
 }
 
 .reformsImg {
