@@ -158,9 +158,10 @@ header {
 @media (max-width: 768px) {
   .labor-reforms {
     flex-direction: column;
-    align-items: center
-  }
-
+    align-items: center;
+    justify-content: center;  
+}
+ 
   .subtitle_reduction {
     margin-top: 0px;
     margin-left: 0px;
