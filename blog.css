@@ -323,18 +323,20 @@ h1 {
 }
 
 .blog-image {
-  height: 12em;
+  height: 10em;
   margin-bottom: 10px;
   width: 20em;
   display: flex;
+  margin-left: 30px;
 }
 
 .right-descent {
   margin-top: 20px;
+  text-align: left;
 }
 
 .blog-image1 {
-  width: 5.2em;
+  width: 5em;
   height: 5em;
   margin-right: 20px;
 }
@@ -347,22 +349,20 @@ h1 {
 .descent-container {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  text-align: left;
+  gap: 30px;
 }
 
 .descent_text {
   font-size: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: left;
-  width: 19em;
   margin-bottom: 0px;
+  padding-right: 1.8em;
 }
 
 .descent-container a {
-  display: flex;
-  gap: 30px;
-  justify-content: left;
-  margin-top: 20px;
+  font-size: 22px;
 }
 
 @media (max-width: 768px) {
@@ -370,39 +370,65 @@ h1 {
     display: flex;
     justify-content: center;
   }
+
+  .right-descent {
+    padding: 0px 20px 0px 20px;
+    text-align: center;
+  }
+
   .blog-image {
-    width: 17em;   
     display: flex;
+    height: auto;
+    margin: 0px;
+    width: 15em;
+    height: 8em;
   }
 
   .blog-image1 {
-    width: 170px;
-    height: 170px;
     margin-right: 25px;
-  }
-
-  .blog-image2 {
-    width: 170px;
-    height: 170px;
+    
   }
 
   .descent_news {
-    width: 13.7em;
+    text-align: left;
   }
 
   .blog-column {
     gap: 27px;
   }
 
+  .descent-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .descent_text {
+    padding: 0px;
+
+  }
 }
 
 @media screen and (max-width: 480px) {
   .blog-image {
     margin-left: 0px;
-    width: 21em;
-    height: 12em;
+    width: 9em;
+    height: 4.5em;
     margin-top: 0px;
   }
+  .blog-image1{
+    width: 4em;
+    height: 4em;
+  }
+  .blog-image2{
+    width: 4em;
+    height: 4em;
+  }
+.descent-container a {
+  font-size: 22px;
+  margin-top: 10px;
+}
+  
 }
 
 /* Estilo Prensa España */
@@ -602,19 +628,11 @@ hr {
     text-align: center;
   }
 
-  .descent-text {
-    font-size: 25px;
-    width: 285px;
-  }
-
-  .descent_news {
-    width: 20em;
-    text-align: center;
+    .descent_news {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    margin-left: 28px;
-  }
+      }
 
   .nav.next {
     right: 14px;
@@ -639,6 +657,7 @@ footer {
   font-family: 'Times New Roman', Times, serif;
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .footer-container {
