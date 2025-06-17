@@ -121,6 +121,7 @@ header {
 .labor-reforms {
   display: flex;
   justify-content: center;  
+  gap: 20px;
 }
 
 .reformsImg {
@@ -133,43 +134,37 @@ header {
 }
 
 .subtitle_reduction {
-  margin-top: 0px;
-  margin-left: 23px;
+  margin-top: 10px;
+  text-align: center;
+  width: 20em;
 }
 
 .paragraph_reforms {
   margin-top: 0px;
-  margin-left: 23px;
+  width: 24.2em;
   text-align: justify;
   margin-bottom: 10px;
     }
 
-
-.divider {
-  width: 2px;
-  background-color: rgb(196, 194, 194);
-  margin-left: 20px;
-}
-
-.enlace_reforms {
- margin-left: 22px;
-}
 
 @media (max-width: 768px) {
   .labor-reforms {
     flex-direction: column;
     align-items: center;
     justify-content: center;  
+    gap: 10px;
 }
  
   .subtitle_reduction {
     margin-top: 0px;
     margin-left: 0px;
+    width: 26em;
   }
 
   .paragraph_reforms {
     margin-left: 0px;
     margin-bottom: 10px;
+    width: 30em;
   }
 
   .enlace_reforms {
@@ -253,15 +248,14 @@ header {
 }
 
 /* Estilo Regularización */
-.regulation_news {
-  padding: 0px 23px 0px 20px;
+.regulation_news {  
   line-height: 25px;
   margin-left: 30px;
   margin-right: 25px;
 }
 
 .enlace_news {
-  margin-left: 53px;
+ margin-left: 30px;
 }
 
 .regularizaciónImg {
@@ -272,7 +266,6 @@ header {
 
 @media (max-width: 768px) {
   .regulation_news {
-    padding: 0px 23px 0px 23px;
     line-height: 25px;
     text-align: justify;
     font-size: 1rem;
@@ -314,7 +307,7 @@ header {
   }
 
   .enlace_news {
-    margin-left: 0px;
+  margin-left: 30px;
   }
 
   .regularizaciónImg {
