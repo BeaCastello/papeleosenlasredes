@@ -506,7 +506,7 @@ hr {
 
 @media (max-width: 768px) {
   .slider {
-    width: 67em;
+    width: 37em;
     margin: 0px;
   }
 
@@ -524,7 +524,6 @@ hr {
   }
 
   .right-side {
-    width: 739px;
     align-self: center;
   }
 
