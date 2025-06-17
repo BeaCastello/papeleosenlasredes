@@ -45,16 +45,12 @@ header {
   padding: 10px;
   max-width: 400px;
 }
-
-
 .news-title {
   font-weight: bold;
   font-size: 1.5rem;
   margin-bottom: 10px;
   padding: 0px;
-  margin-top: -10px;
-  text-align: left;
-
+  margin-top: -10px;  
 }
 
 .news-title1 {
@@ -71,7 +67,6 @@ header {
   font-style: italic;
   color: #555;
   margin-bottom: 10px;
-  text-align: left;
   margin-top: 15px;
 }
 
@@ -132,8 +127,7 @@ header {
 }
 
 .reformsImg {
-  width: 390px;
-  margin-left: 23px
+  width: 390px;  
 }
 
 .text-reforms {
