@@ -53,6 +53,7 @@ header {
   margin-bottom: 10px;
   padding: 0px;
   margin-top: -10px;
+  text-align: left;
 
 }
 
@@ -61,12 +62,17 @@ header {
   font-size: 1.5rem;
   margin-bottom: 10px;
   padding: 0px;
+  text-align: left;
+  margin-top: 10px;
+  
 }
 
 .news-subtitle {
   font-style: italic;
   color: #555;
   margin-bottom: 10px;
+  text-align: left;
+  margin-top: 15px;
 }
 
 .news-body p {
@@ -144,8 +150,9 @@ header {
   margin-top: 0px;
   margin-left: 23px;
   text-align: justify;
-  margin-bottom: 0px;
-}
+  margin-bottom: 10px;
+    }
+
 
 .divider {
   width: 2px;
@@ -154,7 +161,7 @@ header {
 }
 
 .enlace_reforms {
-  margin-left: 23px;
+ margin-left: 22px;
 }
 
 @media (max-width: 768px) {
@@ -258,7 +265,7 @@ header {
   padding: 0px 23px 0px 20px;
   line-height: 25px;
   margin-left: 30px;
-  margin-right: 20px;
+  margin-right: 25px;
 }
 
 .enlace_news {
@@ -411,6 +418,7 @@ h1 {
   border-top: 3px solid #ccc;
   margin-top: 30px;
   justify-content: space-between;
+  overflow: hidden; 
 }
 
 .left-side {
@@ -557,7 +565,7 @@ hr {
   }
   .slider-container {
   display: flex;
-  transition: transform 0.9s ease;
+  transition: transform 0.4s ease;
 }
 }
 
@@ -620,10 +628,7 @@ hr {
   .nav.prev {
     left: 14px;
   }
-  .slider-container {
-  display: flex;
-  transition: transform 1s ease;
-}
+  
 }
 
 
