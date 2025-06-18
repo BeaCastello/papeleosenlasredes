@@ -83,7 +83,7 @@ header {
 
 @media (max-width: 768px) {
   .header_img {
-    width: 46em;
+    width: 37em;
     margin-bottom: 0px;
     display: flex;
     flex-direction: column;
@@ -142,7 +142,7 @@ header {
   margin-top: 0px;
   line-height: 1.6em;
   text-align: justify;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 
@@ -162,7 +162,7 @@ header {
 
   .paragraph_reforms {
     margin-left: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
    
   }
 
@@ -241,9 +241,6 @@ header {
  padding: 0px 30px;
   }
  
-
-
-
 }
 
 /* Estilo Regularización */
@@ -275,7 +272,7 @@ header {
   }
 
   .regularizaciónImg {
-    width: 15em;
+    width: 37em;
   }
 }
 
@@ -304,7 +301,7 @@ header {
   }
 
   .regularizaciónImg {
-    width: 9em;
+    width: 21em;
   }
 
 }
@@ -322,9 +319,9 @@ h1 {
 }
 
 .blog-image {
-  height: 10em;
+  height: 25em;
   margin-bottom: 10px;
-  width: 20em;
+  width: 45em;
   display: flex;
   margin-left: 30px;
 }
@@ -335,14 +332,14 @@ h1 {
 }
 
 .blog-image1 {
-  width: 5em;
-  height: 5em;
+  width: 16em;
+  height: 15em;
   margin-right: 20px;
 }
 
 .blog-image2 {
-  width: 5em;
-  height: 5em;
+  width: 16em;
+  height: 15em;
 }
 
 .descent-container {
@@ -356,13 +353,14 @@ h1 {
   font-size: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: left;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   padding-right: 1.8em;
 }
 
 .descent-container a {
   font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
 }
 
 @media (max-width: 768px) {
@@ -380,13 +378,18 @@ h1 {
     display: flex;
     height: auto;
     margin: 0px;
-    width: 15em;
-    height: 8em;
+    width: 34em;
+    height: 22em;
   }
 
   .blog-image1 {
     margin-right: 25px;
-    
+    width: 15em;
+    height: 15em;  
+  }
+  .blog-image2{
+    width: 15em;
+    height: 15em;
   }
 
   .descent_news {
@@ -412,21 +415,24 @@ h1 {
 @media screen and (max-width: 480px) {
   .blog-image {
     margin-left: 0px;
-    width: 9em;
-    height: 4.5em;
+    width: 21em;
+    height: 15em;
     margin-top: 0px;
   }
   .blog-image1{
-    width: 4em;
-    height: 4em;
+    width: 10em;
+    height: 10em;
   }
   .blog-image2{
-    width: 4em;
-    height: 4em;
+    width: 10em;
+        height: 10em;
   }
 .descent-container a {
   font-size: 22px;
   margin-top: 10px;
+}
+.descent_text{
+  text-align: justify;
 }
   
 }
