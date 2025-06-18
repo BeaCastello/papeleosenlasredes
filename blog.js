@@ -62,7 +62,7 @@ async function fetchNews() {
         <img src="${feed.imagen}" alt="${feed.nombre}">
         <div class="info">
           <h3 style="margin-top: 2px; margin-bottom: 0px;">${feed.nombre}</h3>
-          <p><strong>Titular:</strong> ${noticia.title} </p>
+          <p><strong>Titular:</strong> ${noticia.title} <br></br></p>
           <a href="${noticia.link}" target="_blank">Ir a ${feed.nombre} →</a>
         </div>`;
       slidesContainer.appendChild(slide);
@@ -86,8 +86,9 @@ const slidesToShow = 3;
 
 function updateSlider() {
   const slideWidth = document.querySelector('.slide').offsetWidth;
+  slidesContainer.style.transform = `translateX(-${index * slideWidth * slidesToShow}px)`;
   var finalCount = document.body.clientWidth < 768 ? (document.body.clientWidth < 480 ? 1 : 2) : slidesToShow;
-  slidesContainer.style.transform = `translateX(-${index * slideWidth * finalCount}px)`;
+  slidesContainer.style.transform = `translateX(-${index * slideWidth * slidesToShow}px)`;
 }
 
 prevBtn.addEventListener('click', () => {
@@ -98,8 +99,8 @@ prevBtn.addEventListener('click', () => {
 });
 
 nextBtn.addEventListener('click', () => {
+  const maxIndex = Math.ceil(slidesContainer.children.length / slidesToShow) - 1;
   var finalCount = document.body.clientWidth < 768 ? (document.body.clientWidth < 480 ? 1 : 2) : slidesToShow;
-  const maxIndex = Math.ceil(slidesContainer.children.length / finalCount) - 1;
   if (index < maxIndex) {
     index++;
     updateSlider();

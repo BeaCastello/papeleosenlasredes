@@ -109,7 +109,7 @@ header {
 
 /* Nuevas Reformas laborales */
 .title_reforms {
-  text-align: center;  
+  text-align: center;
   margin-bottom: 40px;
   padding: 0px;
 }
@@ -157,13 +157,13 @@ header {
   .subtitle_reduction {
     margin-top: 0px;
     margin-left: 0px;
-    
+
   }
 
   .paragraph_reforms {
     margin-left: 0px;
     margin-bottom: 15px;
-   
+
   }
 
   .enlace_reforms {
@@ -221,7 +221,7 @@ header {
 
   .reformsImg {
     width: 335px;
-     }
+  }
 
   .reforms-news {
     display: flex;
@@ -237,10 +237,11 @@ header {
   .paragraph_reforms {
     padding: 0px 40px 0px 40px;
   }
+
   .subtitle_reduction {
- padding: 0px 30px;
+    padding: 0px 30px;
   }
- 
+
 }
 
 /* Estilo Regularización */
@@ -268,7 +269,7 @@ header {
   .regulation_news {
     text-align: justify;
     line-height: 1.6;
-   
+
   }
 
   .regularizaciónImg {
@@ -283,7 +284,7 @@ header {
     align-items: center;
   }
 
-   .regulation {
+  .regulation {
     font-size: 25px;
     text-align: center;
     margin-top: 20px;
@@ -291,12 +292,12 @@ header {
   }
 
   .regulation_news {
-   padding: 0px 12px;    
+    padding: 0px 12px;
     text-align: justify;
     margin-top: 10px;
   }
 
-  
+
   .regularizaciónImg {
     width: 21em;
   }
@@ -357,7 +358,7 @@ h1 {
 .descent-container a {
   font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  
+
 }
 
 @media (max-width: 768px) {
@@ -382,9 +383,10 @@ h1 {
   .blog-image1 {
     margin-right: 25px;
     width: 15em;
-    height: 15em;  
+    height: 15em;
   }
-  .blog-image2{
+
+  .blog-image2 {
     width: 15em;
     height: 15em;
   }
@@ -416,28 +418,481 @@ h1 {
     height: 15em;
     margin-top: 0px;
   }
-  .blog-image1{
+
+  .blog-image1 {
     width: 10em;
     height: 10em;
   }
-  .blog-image2{
+
+  .blog-image2 {
     width: 10em;
-        height: 10em;
+    height: 10em;
   }
-.descent-container a {
-  font-size: 22px;
-  margin-top: 10px;
-}
-.descent_text{
-  text-align: justify;
-}
-  
+
+  .descent-container a {
+    font-size: 22px;
+    margin-top: 10px;
+  }
+
+  .descent_text {
+    text-align: justify;
+  }
+
 }
 
 /* Estilo Prensa España */
-.news-slider {
+Css ajustado a todo tipo de pantalla Papeleos en las redes body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: #fff;
+
+}
+
+header {
+  color: rgb(7, 7, 7);
+  font-size: 2.5rem;
+  font-family: 'Times New Roman', serif;
+}
+
+.h1_header {
+  padding-top: 15px;
+  margin-bottom: 0px;
+  font-size: 50px;
+  padding: 0;
+}
+
+.locality {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.header_img {
+  width: 59em;
+  margin-bottom: 0px;
+}
+
+
+.news {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 35px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.news-container {
+  flex: 1 1 300px;
+  border-top: 4px solid black;
+  padding: 10px;
+  max-width: 400px;
+  margin-top: 5px;
+}
+
+.news-title {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  padding: 0px;
+  margin-top: -10px;
+}
+
+.news-title1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  padding: 0px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.news-subtitle {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.news-body p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.news-body {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .header_img {
+    width: 37em;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .news {
+    padding: 10px;
+  }
+
+  .news-title1 {
+    line-height: 35px;
+    text-align: center;
+  }
+
+  .news-subtitle {
+    margin-top: 15px;
+    line-height: 25px;
+  }
+}
+
+/* Nuevas Reformas laborales */
+.title_reforms {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 0px;
+}
+
+.labor-reforms {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  line-height: 1.7em;
+}
+
+.reformsImg {
+  width: 390px;
+}
+
+.text-reforms {
+  width: 25rem;
+  line-height: 25px;
+}
+
+.subtitle_reduction {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.paragraph_reforms {
+  margin-top: 0px;
+  line-height: 1.6em;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .labor-reforms {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .subtitle_reduction {
+    margin-top: 0px;
+    margin-left: 0px;
+
+  }
+
+  .paragraph_reforms {
+    margin-left: 0px;
+    margin-bottom: 15px;
+
+  }
+
+  .enlace_reforms {
+    margin-left: 0px;
+
+  }
+
+  .reformsImg {
+    width: 490px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+
+  .text-reforms {
+    width: 24em;
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header_img {
+    width: 22em;
+    margin-bottom: 0px;
+
+  }
+
+  .news-title {
+    font-size: 25px;
+    margin-bottom: 20px;
+    padding: 0px;
+    margin-top: 0px;
+    line-height: 35px;
+    margin-top: -20px;
+  }
+
+  .title_reforms {
+    font-size: 25px;
+    line-height: 40px;
+    margin-bottom: 25px;
+  }
+
+  .news-container {
+    width: 270px;
+  }
+
+  .news-body {
+    text-align: justify;
+  }
+
+  .text-reforms {
+    width: 21em;
+    margin-bottom: 0px;
+  }
+
+  .reformsImg {
+    width: 335px;
+  }
+
+  .reforms-news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .labor-reforms {
+    margin-left: 0px;
+  }
+
+  .paragraph_reforms {
+    padding: 0px 40px 0px 40px;
+  }
+
+  .subtitle_reduction {
+    padding: 0px 30px;
+  }
+
+}
+
+/* Estilo Regularización */
+.regulation_news {
+  line-height: 35px;
+  padding: 0px 30px 0px 30px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+}
+
+.enlace_news {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 30px;
+}
+
+.regularizaciónImg {
+  display: flex;
+  justify-self: center;
+  margin-top: 25px;
+}
+
+@media (max-width: 768px) {
+  .regulation_news {
+    text-align: justify;
+    line-height: 1.6;
+
+  }
+
+  .regularizaciónImg {
+    width: 37em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .regulation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .regulation {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  .regulation_news {
+    padding: 0px 12px;
+    text-align: justify;
+    margin-top: 10px;
+  }
+
+
+  .regularizaciónImg {
+    width: 21em;
+  }
+
+}
+
+/* Estilo Descenso */
+h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.left-descent {
+  margin-top: 20px;
+  box-sizing: border-box;
+
+}
+
+.blog-image {
+  height: 25em;
+  margin-bottom: 10px;
+  width: 45em;
+  display: flex;
+  margin-left: 30px;
+}
+
+.right-descent {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.blog-image1 {
+  width: 16em;
+  height: 15em;
+  margin-right: 20px;
+}
+
+.blog-image2 {
+  width: 16em;
+  height: 15em;
+}
+
+.descent-container {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  gap: 30px;
+}
+
+.descent_text {
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+  margin-bottom: 10px;
+  padding-right: 1.8em;
+}
+
+.descent-container a {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+@media (max-width: 768px) {
+  .left-descent {
+    display: flex;
+    justify-content: center;
+  }
+
+  .right-descent {
+    padding: 0px 20px 0px 20px;
+    text-align: center;
+  }
+
+  .blog-image {
+    display: flex;
+    height: auto;
+    margin: 0px;
+    width: 34em;
+    height: 22em;
+  }
+
+  .blog-image1 {
+    margin-right: 25px;
+    width: 15em;
+    height: 15em;
+  }
+
+  .blog-image2 {
+    width: 15em;
+    height: 15em;
+  }
+
+  .descent_news {
+    text-align: left;
+  }
+
+  .blog-column {
+    gap: 27px;
+  }
+
+  .descent-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .descent_text {
+    padding: 0px;
+
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .blog-image {
+    margin-left: 0px;
+    width: 21em;
+    height: 15em;
+    margin-top: 0px;
+  }
+
+  .blog-image1 {
+    width: 10em;
+    height: 10em;
+  }
+
+  .blog-image2 {
+    width: 10em;
+    height: 10em;
+  }
+
+  .descent-container a {
+    font-size: 22px;
+    margin-top: 10px;
+  }
+
+  .descent_text {
+    text-align: justify;
+  }
+
+}
+
+/* Estilo Prensa España */
+.slider-new {
   display: flex;
   background-color: #f9f9f9;
+  margin-top: 20px; 
+}
+
+.news-slider {
+  display: flex;
+
   padding-bottom: 30px;
   border-top: 3px solid #ccc;
   margin-top: 30px;
@@ -451,9 +906,9 @@ h1 {
 }
 
 .left-side h2 {
-  width: 245px;
   font-size: 30px;
   margin-top: 80px;
+  text-align: center;
 }
 
 .left-side h3 {
@@ -480,6 +935,7 @@ h1 {
 .slide {
   box-sizing: border-box;
   display: flex;
+  margin-top: 20px;
 }
 
 .slide img {
@@ -546,23 +1002,21 @@ hr {
 }
 
 @media (max-width: 768px) {
+  .slider-new {
+    display: flex;
+    flex-direction: column;
+  }
+
   .slider {
     width: 37em;
     margin: 0px;
   }
 
-  .left-side {
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-  }
-
   .left-side h2 {
-    width: 50em;
-    font-size: 25px;
+    font-size: 30px;
     margin-top: 30px;
     margin-bottom: 30px;
-  }
+     }
 
   .right-side {
     align-self: center;
@@ -591,13 +1045,17 @@ hr {
     display: flex;
     transition: transform 0.4s ease;
   }
+
+  .slide img {
+    margin-left: 1px;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .left-side h2 {
-    width: 17em;
     text-align: center;
     line-height: 35px;
+    margin-bottom: 0px;
   }
 
   .right-side {
@@ -631,11 +1089,11 @@ hr {
     text-align: center;
   }
 
-    .descent_news {
+  .descent_news {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-      }
+  }
 
   .nav.next {
     right: 14px;
@@ -646,11 +1104,86 @@ hr {
   }
 
   .slide img {
-    margin-left: 38.5px;
+    margin-left: 50px;
   }
 
 }
 
+
+/* Estilos footer */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.footer-container {
+  display: flex;
+  text-align: center;
+  gap: 4em;
+}
+
+.footer-container a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+h4 {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.inf-company {
+  line-height: 30px;
+  font-size: 20px;
+}
+
+.footer-container a:hover {
+  text-decoration: underline;
+}
+
+.footer-p {
+  font-size: 15px;
+}
+
+
+@media screen and (max-width: 480px) {
+
+  .footer-section-enlaces {
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .inf-company {
+    line-height: 15px;
+    text-align: center;
+  }
+
+  .footer-section-enlaces,
+  .footer-section-datacompany,
+  .footer-section-social {
+    text-align: center;
+  }
+
+  .footer-p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+}
 
 /* Estilos footer */
 
