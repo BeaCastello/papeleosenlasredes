@@ -71,22 +71,23 @@ ul li {
     list-style: none;
     padding: 10px;
     border-radius: 5px;
-    width: 300px;
+    width: 210px;    
 }
 
 .services:hover .submenu {
     display: block;
-    width: 120px;
+    width: 210px;
 }
 
 .submenu li {
-    padding: 5px 0;
+    padding: 5px 0px 0px 10px;
     color: white;
+    line-height: 22px;
 }
 
 @media (max-width: 768px) {
     li {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .submenu {

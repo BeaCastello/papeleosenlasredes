@@ -62,14 +62,16 @@ function showSlide(index) {
 
 // Enlace con emailjs
 
+
+
 (function () {
-    emailjs.init("H75WbyQSMoVVgsGfI");
+    emailjs.init({publicKey:"Oyh2uTXc5UaZPqt7o"});
 })();
 
 document.getElementById('contactForm').addEventListener('submit', function (event) {
     event.preventDefault();
 
-    emailjs.sendForm("service_cov3d0q","template_hb4zrx5", this)
+    emailjs.sendForm("service_9xutcqf","template_rzjqc3b", this)
         .then(function () {
             alert('Correo enviado con éxito!');
         }, function (error) {
