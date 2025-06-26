@@ -62,8 +62,6 @@ function showSlide(index) {
 
 // Enlace con emailjs
 
-
-
 (function () {
     emailjs.init({publicKey:"Oyh2uTXc5UaZPqt7o"});
 })();
