@@ -29,3 +29,14 @@ document.getElementById('contactForm').addEventListener('submit', function (even
             alert('Error al enviar el correo: ' + JSON.stringify(error));
         });
 });
+
+// Conectando con el whatsapp
+const whatsappContainer = document.getElementById('whatsapp-container');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        whatsappContainer.classList.add('visible');
+    } else {
+        whatsappContainer.classList.remove('visible');
+    }
+});
