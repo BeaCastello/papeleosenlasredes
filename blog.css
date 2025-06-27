@@ -92,6 +92,15 @@ header {
 }
 
 @media screen and (max-width: 480px) {
+
+  .h1_header {
+    font-size: 40px
+  }
+
+  .locality {
+    font-size: 30px
+  }
+
   .news {
     padding: 10px;
   }
@@ -629,7 +638,7 @@ header {
 
 @media screen and (max-width: 480px) {
   .header_img {
-    width: 22em;
+    width: 21.2em;
     margin-bottom: 0px;
 
   }
@@ -645,8 +654,9 @@ header {
 
   .title_reforms {
     font-size: 25px;
-    line-height: 40px;
+    line-height: 35px;
     margin-bottom: 25px;
+    width: 300px;
   }
 
   .news-container {
@@ -678,11 +688,14 @@ header {
   }
 
   .paragraph_reforms {
-    padding: 0px 40px 0px 40px;
+    padding: 0px 45px 0px 45px;
+    font-size: 1rem;
+    line-height: 1.6;
   }
 
   .subtitle_reduction {
     padding: 0px 30px;
+    line-height: 32px;
   }
 
 }
@@ -732,12 +745,15 @@ header {
     text-align: center;
     margin-top: 20px;
     padding: 0;
+    line-height: 32px;
   }
 
   .regulation_news {
-    padding: 0px 12px;
+    padding: 0px 20px 0px 20px;
     text-align: justify;
     margin-top: 10px;
+    font-size: 1rem;
+    line-height: 1.6;
   }
 
 
@@ -858,7 +874,7 @@ h1 {
   .blog-image {
     margin-left: 0px;
     width: 21em;
-    height: 15em;
+    height: 12em;
     margin-top: 0px;
   }
 
@@ -875,10 +891,20 @@ h1 {
   .descent-container a {
     font-size: 22px;
     margin-top: 10px;
+    text-align: center;
+  }
+
+  h1.descent_text {
+    text-align: justify;
+    line-height: 32px;
+    font-size: 25px;
   }
 
   .descent_text {
     text-align: justify;
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 1.6;
   }
 
 }
@@ -887,7 +913,7 @@ h1 {
 .slider-new {
   display: flex;
   background-color: #f9f9f9;
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 
 .news-slider {
@@ -1008,7 +1034,8 @@ hr {
   }
 
   .slider {
-    width: 37em;
+    width: 46.8em;
+    /*  width: 37em; */
     margin: 0px;
   }
 
@@ -1016,7 +1043,7 @@ hr {
     font-size: 30px;
     margin-top: 30px;
     margin-bottom: 30px;
-     }
+  }
 
   .right-side {
     align-self: center;
@@ -1047,7 +1074,7 @@ hr {
   }
 
   .slide img {
-    margin-left: 1px;
+    margin-left: 50px;
   }
 }
 
@@ -1056,6 +1083,7 @@ hr {
     text-align: center;
     line-height: 35px;
     margin-bottom: 0px;
+    font-size: 25px;
   }
 
   .right-side {
@@ -1100,7 +1128,7 @@ hr {
   }
 
   .nav.prev {
-    left: 14px;
+   left: 20px;
   }
 
   .slide img {
@@ -1185,77 +1213,3 @@ h4 {
   }
 }
 
-/* Estilos footer */
-
-footer {
-  background-color: #333;
-  color: #fff;
-  font-family: 'Times New Roman', Times, serif;
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.footer-container {
-  display: flex;
-  text-align: center;
-  gap: 4em;
-}
-
-.footer-container a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-h4 {
-  margin-bottom: 10px;
-  font-size: 25px;
-}
-
-.inf-company {
-  line-height: 30px;
-  font-size: 20px;
-}
-
-.footer-container a:hover {
-  text-decoration: underline;
-}
-
-.footer-p {
-  font-size: 15px;
-}
-
-
-@media screen and (max-width: 480px) {
-
-  .footer-section-enlaces {
-    display: flex;
-    flex-direction: column;
-    line-height: 30px;
-    text-align: center;
-  }
-
-  .inf-company {
-    line-height: 15px;
-    text-align: center;
-  }
-
-  .footer-section-enlaces,
-  .footer-section-datacompany,
-  .footer-section-social {
-    text-align: center;
-  }
-
-  .footer-p {
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .footer-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
-  }
-}

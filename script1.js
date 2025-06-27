@@ -16,13 +16,13 @@ document.addEventListener('click', (e) => {
 // Enlace con emailjs
 
 (function () {
-    emailjs.init("H75WbyQSMoVVgsGfI");
+    emailjs.init("Oyh2uTXc5UaZPqt7o");
 })();
 
 document.getElementById('contactForm').addEventListener('submit', function (event) {
     event.preventDefault();
 
-    emailjs.sendForm("service_ghupzau","template_0aug3ln", this)
+    emailjs.sendForm("service_9xutcqf","template_kfux5u9", this)
         .then(function () {
             alert('Correo enviado con éxito!');
         }, function (error) {
