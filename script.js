@@ -69,7 +69,7 @@ function showSlide(index) {
 document.getElementById('contactForm').addEventListener('submit', function (event) {
     event.preventDefault();
 
-    emailjs.sendForm("service_9xutcqf","template_rzjqc3b", this)
+    emailjs.sendForm("service_9xutcqf","template_ysamtyl", this)
         .then(function () {
             alert('Correo enviado con éxito!');
         }, function (error) {
